@@ -24,7 +24,8 @@ export default function CTA() {
 
         {/* Heading */}
         <h2 className="text-2xl md:text-3xl font-semibold leading-snug">
-          Need reliable IT or security solutions?
+          Need reliable IT 
+          <span className="text-orange-500"> or security solutions?</span>
         </h2>
 
         {/* Subtext */}
@@ -40,7 +41,7 @@ export default function CTA() {
             href="/contact"
             className="
               px-7 py-2.5 rounded-full
-              bg-blue-600 text-white text-sm font-medium
+              bg-orange-600 text-white text-sm font-medium
               hover:bg-amber-500 hover:text-black
               transition
             "

@@ -153,7 +153,7 @@ export default function ServicesSection() {
   const [open, setOpen] = useState(false);
 
   return (
-    <section id="services" className="py-20 bg-white">
+    <section id="services" className="py-20 bg-amber-50">
 
       {/* HEADER */}
       <div className="text-center max-w-3xl mx-auto px-6">

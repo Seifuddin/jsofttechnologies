@@ -4,118 +4,129 @@ import { motion } from "framer-motion";
 import {
   ShieldCheck,
   Zap,
-  Users,
-  Settings,
-  Award,
+  Lock,
+  Activity,
   Headphones,
 } from "lucide-react";
 
-const reasons = [
-  {
-    title: "Reliable Infrastructure",
-    desc: "We design stable and secure systems that keep your business running without interruptions.",
-    icon: ShieldCheck,
-  },
-  {
-    title: "Fast Response Time",
-    desc: "Quick support for IT issues, CCTV faults, and network downtime whenever you need us.",
-    icon: Zap,
-  },
-  {
-    title: "Expert Team",
-    desc: "Skilled professionals in networking, security systems, and digital services.",
-    icon: Users,
-  },
-  {
-    title: "End-to-End Solutions",
-    desc: "From installation to maintenance — we handle everything under one roof.",
-    icon: Settings,
-  },
-  {
-    title: "Proven Quality",
-    desc: "We deliver high-standard solutions trusted by businesses and institutions.",
-    icon: Award,
-  },
-  {
-    title: "24/7 Support",
-    desc: "Always available technical support for critical systems and business continuity.",
-    icon: Headphones,
-  },
-];
-
 export default function WhyChooseUs() {
   return (
-    <section className="relative py-20 bg-white">
+    <section className="relative py-28 bg-amber-50 overflow-hidden">
 
-      {/* HEADER */}
-      <div className="text-center max-w-3xl mx-auto px-6">
-        <h2 className="text-3xl md:text-4xl font-semibold text-gray-900">
-          Why Choose JSoft Technologies
-        </h2>
-
-        <p className="mt-3 text-gray-600 text-sm md:text-base">
-          We don’t just install systems — we build reliable digital infrastructure
-          that supports your business growth.
-        </p>
+      {/* BACKGROUND GLOW SYSTEM */}
+      <div className="absolute inset-0">
+        <div className="absolute w-[500px] h-[500px] bg-blue-900/5 blur-[140px] rounded-full top-[-150px] left-[-150px]" />
+        <div className="absolute w-[500px] h-[500px] bg-amber-500/10 blur-[140px] rounded-full bottom-[-180px] right-[-180px]" />
       </div>
 
-      {/* GRID */}
-      <div className="max-w-6xl mx-auto px-6 mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="relative max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
 
-        {reasons.map((item, i) => {
-          const Icon = item.icon;
+        {/* LEFT SIDE */}
+        <motion.div
+          initial={{ opacity: 0, x: -25 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+        >
 
-          return (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="group border rounded-xl p-6 hover:shadow-md transition bg-white"
-            >
+          <p className="text-xs tracking-[0.3em] uppercase text-blue-900/60">
+            Why Businesses Trust JSoft
+          </p>
 
-              {/* ICON */}
-              <div className="w-10 h-10 rounded-lg bg-blue-900 text-white flex items-center justify-center group-hover:bg-amber-500 transition">
-                <Icon size={18} />
-              </div>
+          <h2 className="mt-4 text-2xl md:text-3xl font-semibold text-gray-900 leading-tight">
+            We don’t react to failures —  
+            <span className="text-blue-900"> we engineer them out.</span>
+          </h2>
 
-              {/* TITLE */}
-              <h3 className="mt-4 font-semibold text-gray-900">
-                {item.title}
-              </h3>
+          <p className="mt-6 text-gray-700 text-sm md:text-base leading-relaxed">
+            Most businesses lose money silently through downtime, weak networks,
+            and security gaps. We design infrastructure that stays stable,
+            secure, and predictable — even under pressure.
+          </p>
 
-              {/* DESC */}
-              <p className="mt-2 text-sm text-gray-600 leading-relaxed">
-                {item.desc}
-              </p>
+          {/* CORE POINTS - MORE PREMIUM STRUCTURE */}
+          <div className="mt-7 space-y-5">
 
-            </motion.div>
-          );
-        })}
+            {[
+              {
+                icon: ShieldCheck,
+                text: "Security-first system architecture for business protection",
+              },
+              {
+                icon: Activity,
+                text: "Always-on infrastructure designed for maximum uptime",
+              },
+              {
+                icon: Lock,
+                text: "Controlled access and monitored digital environments",
+              },
+            ].map((item, i) => {
+              const Icon = item.icon;
 
-      </div>
+              return (
+                <div key={i} className="flex gap-3 items-start border-b border-orange-200 rounded-lg p-2">
+                  <div className="p-1.5 rounded-md bg-blue-900 text-white mt-0.5">
+                    <Icon size={14} />
+                  </div>
+                  <p className="text-sm text-gray-700 leading-relaxed">
+                    {item.text}
+                  </p>
+                </div>
+              );
+            })}
 
-      {/* BOTTOM STRIP (TRUST BOOSTER) */}
-      <div className="max-w-5xl mx-auto mt-16 px-6">
+          </div>
 
-        <div className="bg-gradient-to-r from-blue-950 to-blue-900 text-white rounded-2xl p-8 text-center">
+          {/* CTA (NOW VISIBLE AND STRONGER) */}
+          <button className="hidden mt-10 bg-blue-900 hover:bg-blue-950 text-white px-7 py-3 rounded-xl text-sm font-medium transition">
+            Get Professional Assessment
+          </button>
 
-          <h3 className="text-xl md:text-2xl font-semibold">
-            Trusted by Businesses Across Kenya
+        </motion.div>
+
+        {/* RIGHT SIDE */}
+        <motion.div
+          initial={{ opacity: 0, x: 25 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          className="bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 text-white rounded-3xl p-10 shadow-2xl"
+        >
+
+          <h3 className="text-2xl font-semibold">
+            Engineering-Grade Reliability
           </h3>
 
           <p className="mt-3 text-sm text-blue-100">
-            From small offices to large organizations — we deliver systems that work.
+            Built like critical infrastructure — not basic IT services.
           </p>
 
-          <button className="mt-6 bg-amber-500 hover:bg-amber-600 text-black px-6 py-3 rounded-xl text-sm font-medium transition">
-            Request Consultation
-          </button>
+          {/* IMPACT LIST */}
+          <div className="mt-8 space-y-6 text-sm">
 
-        </div>
+            <div className="flex gap-3">
+              <Zap className="text-amber-400" />
+              <p>Rapid deployment with zero operational disruption</p>
+            </div>
+
+            <div className="flex gap-3">
+              <Headphones className="text-amber-400" />
+              <p>Dedicated technical support for business continuity</p>
+            </div>
+
+            <div className="flex gap-3">
+              <ShieldCheck className="text-amber-400" />
+              <p>Security-focused engineering across all installations</p>
+            </div>
+
+          </div>
+
+          {/* TRUST STRIP */}
+          <div className="mt-10 border-t border-white/10 pt-6 text-xs text-blue-100/80">
+            ✔ Nairobi-based engineers • ✔ On-site support • ✔ Business-critical systems
+          </div>
+
+        </motion.div>
 
       </div>
-
     </section>
   );
 }
