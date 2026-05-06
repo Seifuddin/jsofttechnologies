@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight, ShieldCheck, Network, Camera, Cpu } from "lucide-react";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -23,7 +24,7 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 text-sm text-amber-400"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 text-sm text-orange-500"
           >
             <Cpu size={14} />
             IT • SECURITY • INFRASTRUCTURE • MEDIA
@@ -37,7 +38,7 @@ export default function Hero() {
             className="text-3xl md:text-5xl font-semibold leading-tight mt-5"
           >
             Build & Secure{" "}
-            <span className="text-amber-400">Digital Systems</span>{" "}
+            <span className="text-orange-500">Digital Systems</span>{" "}
             That Power Your Business
           </motion.h1>
 
@@ -59,11 +60,11 @@ export default function Hero() {
             transition={{ delay: 0.3 }}
             className="flex flex-wrap gap-4 mt-6"
           >
-            <button className="bg-amber-500 hover:bg-amber-600 px-6 py-3 rounded-xl font-semibold flex items-center gap-2 transition shadow-lg">
+            <button className="bg-orange-500 hover:bg-amber-600 px-4 py-2 rounded-full fontsemibold flex items-center gap-2 transition shadow-lg">
               Get Consultation <ArrowRight size={18} />
             </button>
 
-            <button className="border border-white/15 px-6 py-3 rounded-xl hover:bg-white hover:text-[#070B1A] transition">
+            <button className="border border-white/15 px-4 py-2 rounded-full hover:bg-white hover:text-[#070B1A] transition">
               View Services
             </button>
           </motion.div>
@@ -72,17 +73,17 @@ export default function Hero() {
           <div className="flex flex-wrap gap-5 mt-8 text-sm text-gray-400">
 
             <span className="flex items-center gap-2">
-              <ShieldCheck size={14} className="text-amber-400" />
+              <ShieldCheck size={14} className="text-orange-500" />
               Secure Systems
             </span>
 
             <span className="flex items-center gap-2">
-              <Network size={14} className="text-amber-400" />
+              <Network size={14} className="text-orange-500" />
               Network Experts
             </span>
 
             <span className="flex items-center gap-2">
-              <Camera size={14} className="text-amber-400" />
+              <Camera size={14} className="text-orange-500" />
               Media Production
             </span>
 
@@ -90,36 +91,32 @@ export default function Hero() {
 
         </div>
 
-        {/* RIGHT CARD */}
+        {/* RIGHT IMAGE */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.97 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.2 }}
-          className="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-xl"
+          initial={{ opacity: 0, scale: 0.95, x: 40 }}
+          animate={{ opacity: 1, scale: 1, x: 0 }}
+          transition={{ delay: 0.3 }}
+          className="relative"
         >
 
-          <h3 className="text-lg font-semibold mb-5">
-            Core Services Overview
-          </h3>
+          {/* image container */}
+          <div className="relative w-full h-[400px] md:h-[500px] rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
 
-          <div className="space-y-4">
+            <Image
+              src="/images/IT-Technician.jpg" // 🔥 replace with your image path
+              alt="IT Infrastructure"
+              fill
+              className="object-cover"
+              priority
+            />
 
-            {[
-              "Network & Infrastructure Setup",
-              "CCTV Security Installation",
-              "IT Support & Maintenance",
-              "Graphic Design & Branding",
-            ].map((item, i) => (
-              <div
-                key={i}
-                className="flex items-center justify-between p-3 rounded-xl bg-white/5 border border-white/10"
-              >
-                <span className="text-gray-200 text-sm">{item}</span>
-                <span className="text-xs text-amber-400">Active</span>
-              </div>
-            ))}
+            {/* overlay gradient */}
+            <div className="absolute inset-0 bg-gradient-to-tr from-[#070B1A]/80 via-transparent to-transparent" />
 
           </div>
+
+          {/* floating glow effect */}
+          <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-amber-500/20 blur-[80px] rounded-full" />
 
         </motion.div>
 

@@ -38,7 +38,7 @@ export default function CTA() {
         <div className="mt-7 flex flex-col sm:flex-row gap-3 justify-center">
 
           <a
-            href="/contact"
+            href="/contacts"
             className="
               px-7 py-2.5 rounded-full
               bg-orange-600 text-white text-sm font-medium

@@ -1,6 +1,7 @@
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import WhatsAppButton from "./components/WhatsApp";
+import Footer from "./components/Footer";
 
 export const metadata = {
   title: "JSoft Technologies",
@@ -13,7 +14,8 @@ export default function RootLayout({ children }) {
       <body>
         <Navbar />
         <WhatsAppButton />
-        <div className="pt20">{children}</div>
+        <div className="overflow-x-hidden">{children}</div>
+        <Footer />
       </body>
     </html>
   );

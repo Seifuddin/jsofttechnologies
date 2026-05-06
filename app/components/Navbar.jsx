@@ -10,10 +10,10 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "Services", href: "#services" },
-    { name: "About", href: "#about" },
-    { name: "Portfolio", href: "#portfolio" },
-    { name: "Contact", href: "#contact" },
+    { name: "Services", href: "/services" },
+    { name: "About", href: "/about" },
+    { name: "Portfolio", href: "/portfolio" },
+    { name: "Contact", href: "/contacts" },
   ];
 
   useEffect(() => {
@@ -29,11 +29,11 @@ export default function Navbar() {
     <nav
       className={`fixed w-full top-0 left-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-white shadow-lg backdrop-blur-md"
-          : "bg-white/80 backdrop-blur-md"
+          ? "bg-white shadow-lg backdropblur-md"
+          : "bg-white backdropblur-md"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
 
         {/* LOGO */}
         <h1 className="text-xl md:text-2xl font-bold text-blue-700">
@@ -75,7 +75,7 @@ export default function Navbar() {
       {/* MOBILE MENU */}
       <div
         className={`md:hidden bg-white shadow-lg overflow-hidden transition-all duration-300 ${
-          open ? "max-h-96 py-4" : "max-h-0"
+          open ? "max-h-96 py-5" : "max-h-0"
         }`}
       >
         <div className="flex flex-col gap-4 px-6">
