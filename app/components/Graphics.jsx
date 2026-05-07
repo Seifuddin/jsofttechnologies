@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { CheckCircle2 } from "lucide-react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
@@ -39,10 +40,10 @@ export default function GraphicDesignServices() {
   ];
 
   return (
-    <section className="relative py-20 bg-amber-50 text-gray-900 overflow-hidden">
+    <section className="relative py-20 bg-amber-50 text-gray-900 overflow-x-hidden">
 
       {/* BACKGROUND ENERGY */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-[-150px] left-[-150px] w-[500px] h-[500px] bg-amber-300/20 blur-[140px]" />
         <div className="absolute bottom-[-150px] right-[-150px] w-[500px] h-[500px] bg-orange-300/10 blur-[140px]" />
       </div>
@@ -50,7 +51,7 @@ export default function GraphicDesignServices() {
       {/* GRID TEXTURE */}
       <div className="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#d1d5db_1px,transparent_1px),linear-gradient(to_bottom,#d1d5db_1px,transparent_1px)] bg-[size:60px_60px]" />
 
-      <div className="relative max-w-7xl mx-auto px-6">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 overflow-hidden">
 
         {/* HEADER */}
         <motion.div
@@ -79,14 +80,14 @@ export default function GraphicDesignServices() {
         </motion.div>
 
         {/* MAIN GRID */}
-        <div className="grid lg:grid-cols-12 gap-8 items-center">
+        <div className="grid lg:grid-cols-12 gap-8 items-center overflow-hidden">
 
           {/* LEFT SIDE SLIDER */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="lg:col-span-7"
+            className="lg:col-span-7 w-full min-w-0"
           >
 
             <Swiper
@@ -97,33 +98,35 @@ export default function GraphicDesignServices() {
               }}
               pagination={{ clickable: true }}
               loop={true}
-              className="rounded-[28px] overflow-hidden shadow-2xl"
+              className="rounded -[28px] overflow-hidden shadow-2xl w-full"
             >
 
               {products.map((item, i) => (
                 <SwiperSlide key={i}>
 
-                  <div className="relative h-[350px] md:h-[420px]">
+                  <div className="relative w-full h-[300px] sm:h-[320px] md:h-[420px]">
 
                     {/* IMAGE */}
                     <Image
                       src={item.image}
                       alt={item.title}
                       fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
                       className="object-cover"
+                      priority={i === 0}
                     />
 
                     {/* OVERLAY */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
 
                     {/* CONTENT */}
-                    <div className="absolute bottom-0 left-0 p-8 text-white">
+                    <div className="absolute bottom-0 left-0 p-5 md:p-8 text-white">
 
-                      <div className="inline-block px-4 py-1 rounded-full bg-orange-500/90 text-xs uppercase tracking-[0.2em] mb-4">
+                      <div className="inline-block px-4 py-1 rounded-full bg-orange-500/90 text-[10px] md:text-xs uppercase tracking-[0.2em] mb-4">
                         Graphic Design
                       </div>
 
-                      <h3 className="text-xl font-bold">
+                      <h3 className="text-lg md:text-xl font-bold">
                         {item.title}
                       </h3>
 
@@ -147,14 +150,14 @@ export default function GraphicDesignServices() {
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="lg:col-span-5"
+            className="lg:col-span-5 w-full min-w-0"
           >
 
             <p className="hidden text-xs tracking-[0.25em] text-orange-600 uppercase">
               What We Create
             </p>
 
-            <h2 className="text-lg 2xlmd:text-3xl font-semibold mt-3 leading-tight">
+            <h2 className="text-2xl md:text-3xl font-semibold mt-3 leading-tight">
               Design That Shapes
               <span className="text-orange-600">
                 {" "}Business Perception
@@ -204,15 +207,25 @@ export default function GraphicDesignServices() {
 /* DESIGN PILLAR */
 function DesignPillar({ title, desc }) {
   return (
-    <div className="relative pl-5 border-l-2 border-orange-400">
+    <div className="flex items-start gap-4 border-b border-orange-200 rounded pb-1">
 
-      <h4 className="text-sm md:text-base font-semibold text-gray-900">
-        {title}
-      </h4>
+      {/* ICON */}
+      <div className="flex-shrink-0 mt-1">
+        <CheckCircle2 className="w-6 h-6 text-orange-400" />
+      </div>
 
-      <p className="text-sm text-gray-600 mt-1 leading-relaxed">
-        {desc}
-      </p>
+      {/* CONTENT */}
+      <div>
+
+        <h4 className="text-sm md:text-base font-semibold text-gray-900">
+          {title}
+        </h4>
+
+        <p className="text-sm text-gray-700 mt-1 leading-relaxed">
+          {desc}
+        </p>
+
+      </div>
 
     </div>
   );

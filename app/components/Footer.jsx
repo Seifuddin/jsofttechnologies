@@ -25,7 +25,7 @@ export default function Footer() {
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 rounded-md bg-gradient-to-br from-blue-600 to-amber-500" />
               <h2 className="text-xl font-semibold">
-                JSoft <span className="text-amber-400">Technologies</span>
+                JSoft <span className="text-orange-400">Technologies</span>
               </h2>
             </div>
 
@@ -36,7 +36,7 @@ export default function Footer() {
             </p>
 
             {/* CTA */}
-            <button className="mt-5 flex items-center gap-2 text-sm text-amber-400 hover:text-amber-300 transition">
+            <button className="mt-5 flex items-center gap-2 text-sm text-orange-400 hover:text-amber-300 transition">
               Request Free Consultation <ArrowRight size={16} />
             </button>
           </div>
@@ -80,17 +80,17 @@ export default function Footer() {
             <div className="space-y-3 text-sm text-white/60">
 
               <div className="flex items-center gap-2">
-                <Phone size={16} className="text-amber-400" />
+                <Phone size={16} className="text-orange-400" />
                 +254 754 784 931
               </div>
 
               <div className="flex items-center gap-2">
-                <Mail size={16} className="text-amber-400" />
+                <Mail size={16} className="text-orange-400" />
                 info@jsoft.co.ke
               </div>
 
               <div className="flex items-center gap-2">
-                <MapPin size={16} className="text-amber-400" />
+                <MapPin size={16} className="text-orange-400" />
                 Nairobi, Kenya
               </div>
 
@@ -105,13 +105,21 @@ export default function Footer() {
           <p className="text-xs text-white/40">
             © {new Date().getFullYear()} JSoft Technologies. All rights reserved.
           </p>
-          <p className="text-gray-300">
+        
+
+          <div className="flex gap-4 text-xs text-white/40">
+            <span className="hover:text-white transition cursor-pointer">Privacy</span>
+            <span className="hover:text-white transition cursor-pointer">Terms</span>
+            <span className="hover:text-white transition cursor-pointer">Support</span>
+          </div>
+
+            <p className="text-xs text-white/40">
           Designed & Powered by{" "}
           <Link
             href="https://lapsa.vercel.app"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative text-blue-400 font-semibold transition-all duration-300 
+            className="relative text-blue-400 fontsemibold transition-all duration-300 
                        after:content-[''] after:absolute after:left-0 after:-bottom-1 
                        after:w-0 after:h-[2px] after:bg-blue-400 
                        hover:after:w-full after:transition-all after:duration-300"
@@ -119,12 +127,6 @@ export default function Footer() {
             Lapsa Web and Graphics
           </Link>
         </p>
-
-          <div className="flex gap-4 text-xs text-white/40">
-            <span className="hover:text-white transition cursor-pointer">Privacy</span>
-            <span className="hover:text-white transition cursor-pointer">Terms</span>
-            <span className="hover:text-white transition cursor-pointer">Support</span>
-          </div>
 
         </div>
 

@@ -59,7 +59,7 @@ export default function NetworkSystemWorldClass() {
           {/* LEFT VISUAL */}
           <motion.div
             whileHover={{ scale: 1.01 }}
-            className="lg:col-span-7 relative h-[350px] md:h-[420px] rounded-2xl overflow-hidden border border-gray-200"
+            className="lg:col-span-7 relative h-[350px] md:h-[420px] rounded -2xl overflow-hidden border border-gray-200"
           >
 
             <Image
