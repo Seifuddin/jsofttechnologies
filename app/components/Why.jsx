@@ -10,118 +10,191 @@ import {
 } from "lucide-react";
 
 export default function WhyChooseUs() {
-  return (
-    <section className="relative py-28 bg-amber-50 overflow-hidden">
+  const features = [
+    {
+      icon: ShieldCheck,
+      title: "Security-First",
+      text: "Advanced protection systems designed for modern businesses.",
+    },
+    {
+      icon: Activity,
+      title: "High Uptime",
+      text: "Reliable infrastructure engineered for stability and continuity.",
+    },
+    {
+      icon: Lock,
+      title: "Controlled Access",
+      text: "Secure environments with monitored and protected systems.",
+    },
+  ];
 
-      {/* BACKGROUND GLOW SYSTEM */}
-      <div className="absolute inset-0">
-        <div className="absolute w-[500px] h-[500px] bg-blue-900/5 blur-[140px] rounded-full top-[-150px] left-[-150px]" />
-        <div className="absolute w-[500px] h-[500px] bg-amber-500/10 blur-[140px] rounded-full bottom-[-180px] right-[-180px]" />
+  return (
+    <section className="relative py-20 bg-amber-50 overflow-hidden">
+
+      {/* BACKGROUND GLOWS */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute w-[400px] h-[400px] bg-blue-900/5 blur-[120px] rounded-full top-[-120px] left-[-120px]" />
+        <div className="absolute w-[400px] h-[400px] bg-orange-400/10 blur-[120px] rounded-full bottom-[-120px] right-[-120px]" />
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+      <div className="relative max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-10 items-center">
 
         {/* LEFT SIDE */}
         <motion.div
-          initial={{ opacity: 0, x: -25 }}
+          initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
 
-          <p className="text-xs tracking-[0.3em] uppercase text-blue-900/60">
+          <p className="text-xs uppercase tracking-[0.25em] text-orange-600 font-medium">
             Why Businesses Trust JSoft
           </p>
 
-          <h2 className="mt-4 text-2xl md:text-3xl font-semibold text-gray-900 leading-tight">
-            We don’t react to failures —  
-            <span className="text-blue-900"> we engineer them out.</span>
+          <h2 className="mt-4 text-2xl md:text-3xl font-bold leading-tight text-gray-900 max-w-xl">
+            We engineer systems that stay
+            <span className="text-orange-500"> secure, stable, and reliable.</span>
           </h2>
 
-          <p className="mt-6 text-gray-700 text-sm md:text-base leading-relaxed">
-            Most businesses lose money silently through downtime, weak networks,
-            and security gaps. We design infrastructure that stays stable,
-            secure, and predictable — even under pressure.
+          <p className="mt-5 text-gray-600 leading-relaxed text-sm md:text-base max-w-lg">
+            We help businesses eliminate downtime, strengthen security,
+            and build dependable infrastructure that performs under pressure.
           </p>
 
-          {/* CORE POINTS - MORE PREMIUM STRUCTURE */}
-          <div className="mt-7 space-y-5">
+          {/* FEATURE CARDS */}
+          <div className="mt-8 space-y-4">
 
-            {[
-              {
-                icon: ShieldCheck,
-                text: "Security-first system architecture for business protection",
-              },
-              {
-                icon: Activity,
-                text: "Always-on infrastructure designed for maximum uptime",
-              },
-              {
-                icon: Lock,
-                text: "Controlled access and monitored digital environments",
-              },
-            ].map((item, i) => {
+            {features.map((item, i) => {
               const Icon = item.icon;
 
               return (
-                <div key={i} className="flex gap-3 items-start border-b border-orange-200 rounded-lg p-2">
-                  <div className="p-1.5 rounded-md bg-blue-900 text-white mt-0.5">
-                    <Icon size={14} />
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, y: 15 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: i * 0.1 }}
+                  viewport={{ once: true }}
+                  className="flex gap-4 border-b border-orange-200 rounded p-1 hover:shadow-md transition-all duration-300"
+                >
+
+                  <div className="w-7 h-7 rounded bgblue-950 text-orange-500 flex items-center justify-center flex-shrink-0">
+                    <Icon size={22} />
                   </div>
-                  <p className="text-sm text-gray-700 leading-relaxed">
-                    {item.text}
-                  </p>
-                </div>
+
+                  <div>
+                    <h3 className="font-semibold text-gray-900 text-sm md:text-base">
+                      {item.title}
+                    </h3>
+
+                    <p className="mt-1 text-sm text-gray-600 leading-relaxed">
+                      {item.text}
+                    </p>
+                  </div>
+
+                </motion.div>
               );
             })}
 
           </div>
 
-          {/* CTA (NOW VISIBLE AND STRONGER) */}
-          <button className="hidden mt-10 bg-blue-900 hover:bg-blue-950 text-white px-7 py-3 rounded-xl text-sm font-medium transition">
+          {/* CTA */}
+          <button className="hidden mt-8 bg-orange-500 hover:bg-blue-950 text-white px-7 py-3 rounded-xl text-sm font-medium transition-all duration-300">
             Get Professional Assessment
           </button>
 
         </motion.div>
 
-        {/* RIGHT SIDE */}
+        {/* RIGHT SIDE IMAGE */}
         <motion.div
-          initial={{ opacity: 0, x: 25 }}
+          initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 text-white rounded-3xl p-10 shadow-2xl"
+          className="relative overflow-hidden rounded-[28px] min-h-[460px] shadow-2xl"
         >
 
-          <h3 className="text-2xl font-semibold">
-            Engineering-Grade Reliability
-          </h3>
+          {/* IMAGE */}
+          <img
+            src="/images/server-room-interior-stockcake.webp"
+            alt="Infrastructure"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
 
-          <p className="mt-3 text-sm text-blue-100">
-            Built like critical infrastructure — not basic IT services.
-          </p>
+          {/* OVERLAY */}
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-950/90 via-blue-900/75 to-black/70" />
 
-          {/* IMPACT LIST */}
-          <div className="mt-8 space-y-6 text-sm">
+          {/* CONTENT */}
+          <div className="relative z-10 h-full flex flex-col justify-between p-8 md:p-10 text-white">
 
-            <div className="flex gap-3">
-              <Zap className="text-amber-400" />
-              <p>Rapid deployment with zero operational disruption</p>
+            {/* TOP */}
+            <div>
+
+              <div className="inline-flex items-center gap-1 bg-white/10 border border-white/10 backdrop-blur-md rounded-full px-4 py-1 text-[11px] uppercase tracking-[0.2em] text-orange-400">
+                Enterprise Infrastructure
+              </div>
+
+              <h3 className="mt-5 text-2xl md:text-3xl font-bold leading-tight max-w-sm">
+                Engineering-Grade Reliability
+              </h3>
+
+              <p className="mt-4 text-sm text-blue-100 leading-relaxed max-w-md">
+                Built like critical infrastructure — not ordinary IT services.
+              </p>
+
+              {/* FEATURE LIST */}
+              <div className="mt-8 space-y-5">
+
+                <div className="flex gap-4">
+                  <div className="w-11 h-11 rounded-xl bg-white/10 backdrop-blur-md flex items-center justify-center flex-shrink-0">
+                    <Zap className="text-orange-400 " size={18} />
+                  </div>
+
+                  <div>
+                    <h4 className="font-medium text-white text-sm">
+                      Fast Deployment
+                    </h4>
+
+                    <p className="mt-1 text-sm text-blue-100/90 leading-relaxed">
+                      Rapid implementation with minimal disruption.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="w-11 h-11 rounded-xl bg-white/10 backdrop-blur-md flex items-center justify-center flex-shrink-0">
+                    <Headphones className="text-orange-400 " size={18} />
+                  </div>
+
+                  <div>
+                    <h4 className="font-medium text-white text-sm">
+                      Dedicated Support
+                    </h4>
+
+                    <p className="mt-1 text-sm text-blue-100/90 leading-relaxed">
+                      Expert technical assistance whenever needed.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
             </div>
 
-            <div className="flex gap-3">
-              <Headphones className="text-amber-400" />
-              <p>Dedicated technical support for business continuity</p>
+            {/* BOTTOM STRIP */}
+            <div className="border-t border-white/15 pt-5 flex flex-wrap gap-4 text-[11px] text-blue-100/80">
+
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 bg-orange-400 rounded-full" />
+                Nairobi-based engineers
+              </div>
+
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 bg-orange-400  rounded-full" />
+                Business-critical systems
+              </div>
+
             </div>
 
-            <div className="flex gap-3">
-              <ShieldCheck className="text-amber-400" />
-              <p>Security-focused engineering across all installations</p>
-            </div>
-
-          </div>
-
-          {/* TRUST STRIP */}
-          <div className="mt-10 border-t border-white/10 pt-6 text-xs text-blue-100/80">
-            ✔ Nairobi-based engineers • ✔ On-site support • ✔ Business-critical systems
           </div>
 
         </motion.div>

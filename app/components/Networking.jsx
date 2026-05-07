@@ -44,7 +44,7 @@ export default function NetworkSystemWorldClass() {
 
           <h2 className="text-2xl md:text-3xl font-semibold mt-2">
             Networks That Power{" "}
-            <span className="text-gray-900">Modern Businesses</span>
+            <span className="text-orange-500">Modern Businesses</span>
           </h2>
 
           <p className="text-gray-700 mt-3 max-w-2xl mx-auto text-sm">
@@ -59,11 +59,11 @@ export default function NetworkSystemWorldClass() {
           {/* LEFT VISUAL */}
           <motion.div
             whileHover={{ scale: 1.01 }}
-            className="lg:col-span-7 relative h-[420px] rounded-2xl overflow-hidden border border-gray-200"
+            className="lg:col-span-7 relative h-[350px] md:h-[420px] rounded-2xl overflow-hidden border border-gray-200"
           >
 
             <Image
-              src="/images/computing-uws-5.jpg"
+              src="/images/networkings.jpg"
               alt="Network Infrastructure"
               fill
               className="object-cover"
@@ -113,8 +113,8 @@ export default function NetworkSystemWorldClass() {
           >
 
             <h2 className="text-xl font-semibold mt-2">
-              We Build Networks That{" "}
-              <span className="text-gray-900">Never Fail</span>
+              We Build Networks{" "}
+              <span className="text-orange-500"> That Never Fail</span>
             </h2>
 
             <p className="text-gray-700 mt-4 text-sm leading-relaxed max-w-xl">

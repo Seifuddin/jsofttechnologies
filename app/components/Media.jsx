@@ -19,13 +19,13 @@ export default function CinematicStudioCompact() {
           whileInView={{ opacity: 1, y: 0 }}
           className="text-center mb-10"
         >
-          <p className="text-[10px] tracking-[0.3em] text-gray-400 uppercase">
+          <p className="text-[10px] tracking-[0.3em] text-orange-600 uppercase">
             Visual Production Studio
           </p>
 
           <h2 className="text-2xl md:text-3xl font-semibold mt-2">
             Photography &{" "}
-            <span className="text-amber-400">Cinematic Videography</span>
+            <span className="text-orange-600">Cinematic Videography</span>
           </h2>
 
           <p className="text-gray-400 mt-3 max-w-xl mx-auto text-sm">
@@ -39,7 +39,7 @@ export default function CinematicStudioCompact() {
           {/* HERO IMAGE */}
           <motion.div
             whileHover={{ scale: 1.01 }}
-            className="lg:col-span-7 relative h-[360px] rounded-xl overflow-hidden group"
+            className="lg:col-span-7 relative h-[300px] md:h-[360px] rounded-xl overflow-hidden group"
           >
             <Image
               src="/images/Videography-Services-in-Prescott.webp"

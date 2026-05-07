@@ -3,11 +3,45 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-export default function GraphicDesignServices() {
-  return (
-    <section className="relative py-24 bg-amber-50 text-gray-900 overflow-hidden">
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
 
-      {/* CREATIVE BACKGROUND ENERGY */}
+import "swiper/css";
+import "swiper/css/pagination";
+
+export default function GraphicDesignServices() {
+  const products = [
+    {
+      title: "Business Cards",
+      desc: "Professional identity cards that leave a lasting impression.",
+      image: "/images/bscards.jpg",
+    },
+    {
+      title: "Roll-Up Banners",
+      desc: "High-impact promotional banners for events and branding.",
+      image: "/images/Pull-Up-Banners.jpg",
+    },
+    {
+      title: "Flyers & Posters",
+      desc: "Attention-grabbing marketing materials designed for reach.",
+      image: "/images/postcard-1.jpeg",
+    },
+    {
+      title: "Logo Design",
+      desc: "Unique brand identities crafted for recognition and trust.",
+      image: "/images/3d-logo-design-services.jpg",
+    },
+    {
+      title: "Social Media Designs",
+      desc: "Creative visuals optimized for modern digital platforms.",
+      image: "/images/socialmedia.jpeg",
+    },
+  ];
+
+  return (
+    <section className="relative py-20 bg-amber-50 text-gray-900 overflow-hidden">
+
+      {/* BACKGROUND ENERGY */}
       <div className="absolute inset-0">
         <div className="absolute top-[-150px] left-[-150px] w-[500px] h-[500px] bg-amber-300/20 blur-[140px]" />
         <div className="absolute bottom-[-150px] right-[-150px] w-[500px] h-[500px] bg-orange-300/10 blur-[140px]" />
@@ -22,117 +56,141 @@ export default function GraphicDesignServices() {
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           className="text-center mb-14"
         >
-          <p className="text-xs tracking-[0.3em] text-amber-600 uppercase">
+
+          <p className="text-xs tracking-[0.3em] text-orange-600 uppercase">
             Creative Design Studio
           </p>
 
-          <h2 className="text-3xl md:text-4xl font-semibold mt-2">
-            We Don’t Just Design — We Build{" "}
-            <span className="text-gray-900">Brand Identity Systems</span>
+          <h2 className="text-2xl md:text-3xl font-bold mt-3 leading-tight">
+            We Don’t Just Design —
+            <span className="text-orange-600">
+              {" "}We Build Brand Experiences
+            </span>
           </h2>
 
-          <p className="text-gray-600 mt-3 max-w-2xl mx-auto text-sm">
-            Every brand has a story. We translate yours into visuals that
-            feel powerful, consistent, and impossible to ignore.
+          <p className="text-gray-700 mt-4 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
+            From business cards to large-scale branding materials,
+            we create visuals that make businesses unforgettable.
           </p>
+
         </motion.div>
 
         {/* MAIN GRID */}
         <div className="grid lg:grid-cols-12 gap-8 items-center">
 
-          {/* LEFT - CINEMATIC BRAND WALL */}
+          {/* LEFT SIDE SLIDER */}
           <motion.div
-            whileHover={{ scale: 1.01 }}
-            className="lg:col-span-7 relative h-[420px] rounded-2xl overflow-hidden"
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="lg:col-span-7"
           >
 
-            <Image
-              src="/images/photo-1626785774573-4b799315345d.avif"
-              alt="Creative Design Work"
-              fill
-              className="object-cover scale-110"
-            />
+            <Swiper
+              modules={[Autoplay, Pagination]}
+              autoplay={{
+                delay: 3500,
+                disableOnInteraction: false,
+              }}
+              pagination={{ clickable: true }}
+              loop={true}
+              className="rounded-[28px] overflow-hidden shadow-2xl"
+            >
 
-            {/* DARK CREATIVE OVERLAY */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-black/70 via-black/20 to-transparent" />
+              {products.map((item, i) => (
+                <SwiperSlide key={i}>
 
-            {/* FLOATING DESIGN ENERGY */}
-            <div className="absolute inset-0">
-              {Array.from({ length: 8 }).map((_, i) => (
-                <motion.div
-                  key={i}
-                  className="absolute w-2 h-2 bg-amber-400 rounded-full"
-                  style={{
-                    top: `${15 + Math.random() * 70}%`,
-                    left: `${10 + Math.random() * 80}%`,
-                  }}
-                  animate={{
-                    scale: [1, 1.6, 1],
-                    opacity: [0.3, 1, 0.3],
-                  }}
-                  transition={{
-                    duration: 2.5,
-                    repeat: Infinity,
-                    delay: i * 0.2,
-                  }}
-                />
+                  <div className="relative h-[350px] md:h-[420px]">
+
+                    {/* IMAGE */}
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      fill
+                      className="object-cover"
+                    />
+
+                    {/* OVERLAY */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+
+                    {/* CONTENT */}
+                    <div className="absolute bottom-0 left-0 p-8 text-white">
+
+                      <div className="inline-block px-4 py-1 rounded-full bg-orange-500/90 text-xs uppercase tracking-[0.2em] mb-4">
+                        Graphic Design
+                      </div>
+
+                      <h3 className="text-xl font-bold">
+                        {item.title}
+                      </h3>
+
+                      <p className="mt-3 text-sm text-gray-200 max-w-md leading-relaxed">
+                        {item.desc}
+                      </p>
+
+                    </div>
+
+                  </div>
+
+                </SwiperSlide>
               ))}
-            </div>
 
-            {/* STORY LABEL */}
-            <div className="absolute bottom-6 left-6 text-white">
-              <h3 className="text-2xl font-semibold">
-                Visual Identity Creation
-              </h3>
-              <p className="text-sm text-gray-200 mt-1">
-                Where ideas become unforgettable brands
-              </p>
-            </div>
+            </Swiper>
 
           </motion.div>
 
-          {/* RIGHT - CREATIVE MANIFESTO */}
+          {/* RIGHT SIDE */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
             className="lg:col-span-5"
           >
 
-            <p className="text-xs tracking-[0.25em] text-amber-600 uppercase">
+            <p className="hidden text-xs tracking-[0.25em] text-orange-600 uppercase">
               What We Create
             </p>
 
-            <h2 className="text-3xl font-semibold mt-2">
-              Design That{" "}
-              <span className="text-gray-900">Builds Perception</span>
+            <h2 className="text-lg 2xlmd:text-3xl font-semibold mt-3 leading-tight">
+              Design That Shapes
+              <span className="text-orange-600">
+                {" "}Business Perception
+              </span>
             </h2>
 
-            <p className="text-gray-600 mt-4 text-sm leading-relaxed">
-              Great design doesn’t decorate — it communicates. We shape how
-              people feel about your business before they even read a word.
+            <p className="text-gray-600 mt-5 text-sm md:text-base leading-relaxed">
+              Great design is more than aesthetics —
+              it influences trust, recognition, and customer attention.
+              We craft visuals that communicate professionalism and impact.
             </p>
 
             {/* DESIGN PILLARS */}
-            <div className="mt-6 space-y-4">
+            <div className="mt-8 space-y-5">
 
               <DesignPillar
                 title="Brand Identity Systems"
-                desc="Complete visual direction that defines your brand personality."
+                desc="Complete visual branding tailored to your business."
               />
 
               <DesignPillar
-                title="Marketing Visuals"
-                desc="Designs built to attract attention and drive engagement."
+                title="Print & Marketing Materials"
+                desc="Business cards, flyers, banners, brochures, and more."
               />
 
               <DesignPillar
-                title="Creative Consistency"
-                desc="Unified visuals across all platforms and media."
+                title="Digital Content Design"
+                desc="Modern social media visuals optimized for engagement."
               />
 
             </div>
+
+            {/* BUTTON */}
+            <button className="hidden mt-8 bg-orange-500 hover:bg-gray-900 text-white px-7 py-3 rounded-xl text-sm font-medium transition-all duration-300">
+              Explore Design Services
+            </button>
 
           </motion.div>
 
@@ -146,13 +204,13 @@ export default function GraphicDesignServices() {
 /* DESIGN PILLAR */
 function DesignPillar({ title, desc }) {
   return (
-    <div className="relative pl-4 border-l-2 border-amber-400/50">
+    <div className="relative pl-5 border-l-2 border-orange-400">
 
-      <h4 className="text-sm font-semibold text-gray-900">
+      <h4 className="text-sm md:text-base font-semibold text-gray-900">
         {title}
       </h4>
 
-      <p className="text-xs text-gray-600 mt-1">
+      <p className="text-sm text-gray-600 mt-1 leading-relaxed">
         {desc}
       </p>
 

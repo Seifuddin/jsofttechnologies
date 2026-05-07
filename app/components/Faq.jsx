@@ -51,7 +51,8 @@ export default function FAQ() {
           </div>
 
           <h2 className="mt-4 text-2xl md:text-3xl font-semibold text-gray-900">
-            Frequently Asked Questions
+            Frequently 
+            <span className="text-orange-500"> Asked Questions</span>
           </h2>
 
           <p className="mt-3 text-sm text-gray-600">
@@ -60,7 +61,7 @@ export default function FAQ() {
         </div>
 
         {/* FAQ LIST */}
-        <div className="space-y-3">
+        <div className="space-y-3 bg-amber-50">
 
           {faqs.map((item, i) => {
             const isOpen = open === i;

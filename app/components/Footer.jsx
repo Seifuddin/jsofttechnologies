@@ -105,6 +105,20 @@ export default function Footer() {
           <p className="text-xs text-white/40">
             © {new Date().getFullYear()} JSoft Technologies. All rights reserved.
           </p>
+          <p className="text-gray-300">
+          Designed & Powered by{" "}
+          <Link
+            href="https://lapsa.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative text-blue-400 font-semibold transition-all duration-300 
+                       after:content-[''] after:absolute after:left-0 after:-bottom-1 
+                       after:w-0 after:h-[2px] after:bg-blue-400 
+                       hover:after:w-full after:transition-all after:duration-300"
+          >
+            Lapsa Web and Graphics
+          </Link>
+        </p>
 
           <div className="flex gap-4 text-xs text-white/40">
             <span className="hover:text-white transition cursor-pointer">Privacy</span>

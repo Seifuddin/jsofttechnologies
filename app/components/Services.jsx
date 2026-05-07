@@ -157,8 +157,11 @@ export default function ServicesSection() {
 
       {/* HEADER */}
       <div className="text-center max-w-3xl mx-auto px-6">
+        <p className="text-xs tracking-[0.3em] uppercase text-orange-600">
+            Our Services 
+          </p>
         <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
-          Our Core Services
+          What We Do
         </h2>
         <p className="mt-4 text-gray-800">
           End-to-end IT, security, and creative solutions built for modern businesses.
