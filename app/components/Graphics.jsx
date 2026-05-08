@@ -164,7 +164,7 @@ export default function GraphicDesignServices() {
               </span>
             </h2>
 
-            <p className="text-gray-600 mt-5 text-sm md:text-base leading-relaxed">
+            <p className="text-gray-700 mt-5 text-smmd:text-base leading-relaxed">
               Great design is more than aesthetics —
               it influences trust, recognition, and customer attention.
               We craft visuals that communicate professionalism and impact.
@@ -211,13 +211,13 @@ function DesignPillar({ title, desc }) {
 
       {/* ICON */}
       <div className="flex-shrink-0 mt-1">
-        <CheckCircle2 className="w-6 h-6 text-orange-400" />
+        <CheckCircle2 className="w-6 h-6 text-orange-500" />
       </div>
 
       {/* CONTENT */}
       <div>
 
-        <h4 className="text-sm md:text-base font-semibold text-blue-950">
+        <h4 className="text-smmd:text-base font-semibold text-blue-900">
           {title}
         </h4>
 

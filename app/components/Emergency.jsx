@@ -95,7 +95,7 @@ export default function Call() {
             <div className="w-24 h-1 bg-gradient-to-r from-orange-400 to-orange-600 rounded-full mx-auto mt-2" />
 
             {/* DESCRIPTION */}
-            <p className="mt-3 text-gray-200 text-sm md:text-lg max-w-5xl mx-auto leading-relaxed">
+            <p className="mt-3 text-gray-200 text-smmd:text-lg max-w-5xl mx-auto leading-relaxed">
 
               In case you want to speak directly with our team,
               contact us using the telephone number below.

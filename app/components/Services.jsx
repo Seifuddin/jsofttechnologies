@@ -163,7 +163,7 @@ export default function ServicesSection() {
         <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
           What We Do
         </h2>
-        <p className="mt-4 text-gray-800">
+        <p className="mt-4 text-gray-700">
           End-to-end IT, security, and creative solutions built for modern businesses.
         </p>
       </div>
@@ -201,7 +201,7 @@ export default function ServicesSection() {
                     <Icon size={20} />
                   </div>
 
-                  <h3 className="font-semibold text-blue-950">
+                  <h3 className="font-semibold text-blue-900">
                     {s.title}
                   </h3>
                 </div>
@@ -215,7 +215,7 @@ export default function ServicesSection() {
                   {s.subServices.map((item, idx) => (
                     <div
                       key={idx}
-                      className="flex items-center gap-2 text-xs text-blue-950"
+                      className="flex items-center gap-2 text-xs text-blue-900"
                     >
                       <span className="w-1.5 h-1.5 bg-orange-500 rounded-full" />
                       {item}

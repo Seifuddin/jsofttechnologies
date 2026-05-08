@@ -56,7 +56,7 @@ export default function WhyChooseUs() {
             <span className="text-blue-900"> secure, stable, and reliable.</span>
           </h2>
 
-          <p className="mt-5 text-gray-600 leading-relaxed text-sm md:text-base max-w-lg">
+          <p className="mt-5 text-gray-600 leading-relaxed text-smmd:text-base max-w-lg">
             We help businesses eliminate downtime, strengthen security,
             and build dependable infrastructure that performs under pressure.
           </p>
@@ -82,11 +82,11 @@ export default function WhyChooseUs() {
                   </div>
 
                   <div>
-                    <h3 className="font-semibold text-blue-950 text-sm md:text-base">
+                    <h3 className="font-semibold text-blue-900 text-smmd:text-base">
                       {item.title}
                     </h3>
 
-                    <p className="mt-1 text-sm text-gray-700 leading-relaxed">
+                    <p className="mt-1 textsm text-gray-700 leading-relaxed">
                       {item.text}
                     </p>
                   </div>
@@ -137,7 +137,7 @@ export default function WhyChooseUs() {
                 Engineering-Grade Reliability
               </h3>
 
-              <p className="mt-4 text-sm text-blue-100 leading-relaxed max-w-md">
+              <p className="mt-4 textsm text-blue-100 leading-relaxed max-w-md">
                 Built like critical infrastructure — not ordinary IT services.
               </p>
 
@@ -145,12 +145,12 @@ export default function WhyChooseUs() {
               <div className="mt-8 space-y-5">
 
                 <div className="flex gap-4">
-                  <div className="w-11 h-11 rounded-xl bg-white/10 backdrop-blur-md flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-xl bg-white/10 backdrop-blur-md flex items-center justify-center flex-shrink-0">
                     <Zap className="text-orange-400 " size={18} />
                   </div>
 
                   <div>
-                    <h4 className="font-medium text-white text-sm">
+                    <h4 className="fontmedium text-white font-semibold textsm">
                       Fast Deployment
                     </h4>
 
@@ -166,7 +166,7 @@ export default function WhyChooseUs() {
                   </div>
 
                   <div>
-                    <h4 className="font-medium text-white text-sm">
+                    <h4 className="fontmedium text-white font-semibold textsm">
                       Dedicated Support
                     </h4>
 

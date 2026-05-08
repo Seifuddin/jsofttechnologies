@@ -47,7 +47,7 @@ export default function NetworkSystemWorldClass() {
             <span className="text-blue-900">Modern Businesses</span>
           </h2>
 
-          <p className="text-gray-700 mt-3 max-w-2xl mx-auto text-sm">
+          <p className="text-gray-700 mt-3 max-w-2xl mx-auto textsm">
             We design and maintain secure, scalable systems that operate silently
             but keep your entire business alive 24/7.
           </p>
@@ -190,7 +190,7 @@ function Feature({ icon, title, desc }) {
       <div className="text-orange-600 mt-1">{icon}</div>
 
       <div>
-        <h4 className="text-sm font-semibold text-blue-950">{title}</h4>
+        <h4 className="font-semibold text-blue-900">{title}</h4>
         <p className="text-sm text-gray-700">{desc}</p>
       </div>
     </div>

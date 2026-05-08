@@ -84,7 +84,7 @@ export default function FAQ() {
           </h2>
 
           {/* DESCRIPTION */}
-          <p className="mt-3 text-gray-600 max-w-2xl mx-auto leading-relaxed text-sm">
+          <p className="mt-3 text-gray-700 max-w-2xl mx-auto leading-relaxed textsm">
             Answers to the most common questions about our IT,
             networking, CCTV, branding, and technical support services.
           </p>
@@ -135,7 +135,7 @@ export default function FAQ() {
                     </div>
 
                     {/* QUESTION */}
-                    <h3 className="textsm md:text-base fontsemibold text-gray-900 leading-relaxed">
+                    <h3 className="textsm md:text-lg fontsemibold text-gray-900 leading-relaxed">
                       {item.q}
                     </h3>
 

@@ -28,7 +28,7 @@ export default function CinematicStudioCompact() {
             <span className="text-blue-500">Cinematic Videography</span>
           </h2>
 
-          <p className="text-gray-400 mt-3 max-w-xl mx-auto text-sm">
+          <p className="text-gray-400 mt-3 max-w-xl mx-auto textsm">
             We design visual emotion through cinematic storytelling.
           </p>
         </motion.div>

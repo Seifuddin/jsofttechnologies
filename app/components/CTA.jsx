@@ -29,7 +29,7 @@ export default function CTA() {
         </h2>
 
         {/* Subtext */}
-        <p className="px-4 mt-4 text-white/60 text-sm leading-relaxed">
+        <p className="px-4 mt-4 text-white/60 textsm leading-relaxed">
           JSoft Technologies delivers secure networking, CCTV systems,
           IT support, and digital solutions that keep your business running smoothly.
         </p>
