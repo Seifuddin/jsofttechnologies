@@ -15,27 +15,27 @@ export default function GraphicDesignServices() {
     {
       title: "Business Cards",
       desc: "Professional identity cards that leave a lasting impression.",
-      image: "/images/bscards.jpg",
+      image: "/images/business-card-2.0-o.avif",
     },
     {
       title: "Roll-Up Banners",
       desc: "High-impact promotional banners for events and branding.",
-      image: "/images/Pull-Up-Banners.jpg",
+      image: "/images/39b97c98590117.5edfb13bf0294.jpg",
     },
     {
       title: "Flyers & Posters",
       desc: "Attention-grabbing marketing materials designed for reach.",
-      image: "/images/orange-color-scheme-city-background-business-book-cover-design-template-brochure-flyer-layout-annual-report-magazine-108070657.webp",
+      image: "/images/saturdays-party-flyer-design-template-27e1d93f7f67088f439805c8cb5e8d5a_5947cd1b-85b6-43aa-b787-1e90ff4b32ca_screen.png",
     },
     {
       title: "Logo Design",
       desc: "Unique brand identities crafted for recognition and trust.",
-      image: "/images/3d-logo-design-services.jpg",
+      image: "/images/logo.webp",
     },
     {
       title: "Social Media Designs",
       desc: "Creative visuals optimized for modern digital platforms.",
-      image: "/images/designer-at-work-stockcake.webp",
+      image: "/images/social-media-template-business-agency-digital-marketing-business-sale-promo-furniture-fashion-advertising-promotional-banner-vector-frame_25346-662.avif",
     },
   ];
 

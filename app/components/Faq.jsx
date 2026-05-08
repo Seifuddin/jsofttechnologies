@@ -117,7 +117,7 @@ export default function FAQ() {
                 {/* QUESTION */}
                 <button
                   onClick={() => setOpen(isOpen ? null : i)}
-                  className="w-full flex items-center justify-between gap-4 px-2md:px-3 py-2 text-left"
+                  className="w-full flex items-center justify-between gap-4 px-2md:px-3 py-1 text-left"
                 >
 
                   {/* LEFT */}
