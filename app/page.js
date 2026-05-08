@@ -4,7 +4,7 @@ import Hero from "./components/Hero";
 import CTASection from "./components/CTA";
 import WhyChooseUs from "./components/Why";
 import FAQ from "./components/Faq";
-import EmergencyCall from "./components/Emergency";
+import Call from "./components/Emergency";
 import SystemStatus from "./components/SystemStatus";
 import CreativeShowcase from "./components/Media";
 import PhotographyLuxuryGallery from "./components/Gallery";
@@ -23,7 +23,7 @@ export default function Home() {
         <GraphicDesignServices />
         <CTASection />
         <WhyChooseUs />
-        <EmergencyCall />
+        <Call />
         <FAQ />
       </main>
     </div>

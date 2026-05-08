@@ -53,7 +53,7 @@ export default function WhyChooseUs() {
 
           <h2 className="mt-4 text-2xl md:text-3xl font-bold leading-tight text-gray-900 max-w-xl">
             We engineer systems that stay
-            <span className="text-orange-500"> secure, stable, and reliable.</span>
+            <span className="text-blue-900"> secure, stable, and reliable.</span>
           </h2>
 
           <p className="mt-5 text-gray-600 leading-relaxed text-sm md:text-base max-w-lg">
@@ -82,11 +82,11 @@ export default function WhyChooseUs() {
                   </div>
 
                   <div>
-                    <h3 className="font-semibold text-gray-900 text-sm md:text-base">
+                    <h3 className="font-semibold text-blue-950 text-sm md:text-base">
                       {item.title}
                     </h3>
 
-                    <p className="mt-1 text-sm text-gray-600 leading-relaxed">
+                    <p className="mt-1 text-sm text-gray-700 leading-relaxed">
                       {item.text}
                     </p>
                   </div>
@@ -110,7 +110,7 @@ export default function WhyChooseUs() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="relative overflow-hidden rounded-[28px] min-h-[460px] shadow-2xl"
+          className="relative overflow-hidden rounded-lg min-h-[460px]"
         >
 
           {/* IMAGE */}
@@ -121,7 +121,7 @@ export default function WhyChooseUs() {
           />
 
           {/* OVERLAY */}
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-950/90 via-blue-900/75 to-black/70" />
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-950/40 via-blue-900/50 to-black/40" />
 
           {/* CONTENT */}
           <div className="relative z-10 h-full flex flex-col justify-between p-8 md:p-10 text-white">
@@ -154,7 +154,7 @@ export default function WhyChooseUs() {
                       Fast Deployment
                     </h4>
 
-                    <p className="mt-1 text-sm text-blue-100/90 leading-relaxed">
+                    <p className="mt-1 text-sm text-blue-50 leading-relaxed">
                       Rapid implementation with minimal disruption.
                     </p>
                   </div>
@@ -170,7 +170,7 @@ export default function WhyChooseUs() {
                       Dedicated Support
                     </h4>
 
-                    <p className="mt-1 text-sm text-blue-100/90 leading-relaxed">
+                    <p className="mt-1 text-sm text-blue-50 leading-relaxed">
                       Expert technical assistance whenever needed.
                     </p>
                   </div>
@@ -181,7 +181,7 @@ export default function WhyChooseUs() {
             </div>
 
             {/* BOTTOM STRIP */}
-            <div className="border-t border-white/15 pt-5 flex flex-wrap gap-4 text-[11px] text-blue-100/80">
+            <div className="border-t border-white/15 pt-5 flex flex-wrap gap-4 text-[11px] text-blue-50">
 
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-orange-400 rounded-full" />

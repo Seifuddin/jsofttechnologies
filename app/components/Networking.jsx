@@ -44,7 +44,7 @@ export default function NetworkSystemWorldClass() {
 
           <h2 className="text-2xl md:text-3xl font-semibold mt-2">
             Networks That Power{" "}
-            <span className="text-orange-500">Modern Businesses</span>
+            <span className="text-blue-900">Modern Businesses</span>
           </h2>
 
           <p className="text-gray-700 mt-3 max-w-2xl mx-auto text-sm">
@@ -112,9 +112,9 @@ export default function NetworkSystemWorldClass() {
             className="lg:col-span-5"
           >
 
-            <h2 className="text-xl font-semibold mt-2">
+            <h2 className="text-xl font-semibold mt-2 text-blue-900">
               We Build Networks{" "}
-              <span className="text-orange-500"> That Never Fail</span>
+              <span className="text-blue-900"> That Never Fail</span>
             </h2>
 
             <p className="text-gray-700 mt-4 text-sm leading-relaxed max-w-xl">
@@ -149,7 +149,7 @@ export default function NetworkSystemWorldClass() {
             {/* SIGNAL VISUAL */}
             <div className="mt-8">
 
-              <p className="text-xs text-orange-600 mb-2">
+              <p className="text-xs text-blue-600 mb-2">
                 Live Network Strength
               </p>
 
@@ -186,12 +186,12 @@ export default function NetworkSystemWorldClass() {
 /* FEATURE COMPONENT */
 function Feature({ icon, title, desc }) {
   return (
-    <div className="flex gap-3">
+    <div className="flex gap-3 border-b border-orange-200 rounded pb-1">
       <div className="text-orange-600 mt-1">{icon}</div>
 
       <div>
-        <h4 className="text-sm font-semibold">{title}</h4>
-        <p className="text-xs text-gray-600">{desc}</p>
+        <h4 className="text-sm font-semibold text-blue-950">{title}</h4>
+        <p className="text-sm text-gray-700">{desc}</p>
       </div>
     </div>
   );

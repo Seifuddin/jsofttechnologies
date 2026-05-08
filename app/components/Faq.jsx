@@ -2,7 +2,11 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown, HelpCircle } from "lucide-react";
+import {
+  ChevronDown,
+  HelpCircle,
+  Sparkles,
+} from "lucide-react";
 
 const faqs = [
   {
@@ -28,40 +32,67 @@ const faqs = [
 ];
 
 export default function FAQ() {
-  const [open, setOpen] = useState(null);
+  const [open, setOpen] = useState(0);
 
   return (
-    <section className="relative py-24 bg-amber-50 overflow-hidden">
+    <section className="relative py-16 md:py-20 bg-gradient-to-b from-amber-50 via-white to-amber-50 overflow-hidden">
 
-      {/* BACKGROUND GLOW */}
-      <div className="absolute inset-0">
-        <div className="absolute w-[500px] h-[500px] bg-blue-900/5 blur-[140px] rounded-full top-[-160px] left-[-160px]" />
-        <div className="absolute w-[500px] h-[500px] bg-amber-500/10 blur-[140px] rounded-full bottom-[-180px] right-[-180px]" />
+      {/* BACKGROUND */}
+      <div className="absolute inset-0 overflow-hidden">
+
+        <div className="absolute top-[-180px] left-[-120px] w-[400px] h-[400px] bg-orange-300/20 blur-[120px] rounded-full" />
+
+        <div className="absolute bottom-[-180px] right-[-120px] w-[400px] h-[400px] bg-blue-900/10 blur-[120px] rounded-full" />
+
+        {/* GRID */}
+        <div className="absolute inset-0 opacity-[0.04] bg-[linear-gradient(to_right,#000_1px,transparent_1px),linear-gradient(to_bottom,#000_1px,transparent_1px)] bg-[size:70px_70px]" />
+
       </div>
 
-      <div className="relative max-w-3xl mx-auto px-6">
+      <div className="relative max-w-4xl mx-auto px-4 sm:px-6">
 
         {/* HEADER */}
-        <div className="text-center mb-12">
-          <div className="flex justify-center">
-            <div className="flex items-center gap-2 text-blue-900 bg-amber-100 px-4 py-1 rounded-full text-xs font-medium">
-              <HelpCircle size={14} />
-              Support Center
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4 }}
+          className="text-center mb-10"
+        >
+
+          {/* BADGE */}
+          <div className="flex justify-center mb-4">
+
+            <div className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/80 backdrop-blur-md border border-orange-200 shadow-sm">
+
+              <HelpCircle className="w-4 h-4 text-orange-500" />
+
+              <span className="text-[11px] font-semibold tracking-[0.22em] uppercase text-orange-600">
+                Support Center
+              </span>
+
             </div>
+
           </div>
 
-          <h2 className="mt-4 text-2xl md:text-3xl font-semibold text-gray-900">
-            Frequently 
-            <span className="text-orange-500"> Asked Questions</span>
+          {/* TITLE */}
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
+
+            Frequently Asked
+            <span className="text-blue-900"> Questions</span>
+
           </h2>
 
-          <p className="mt-3 text-sm text-gray-600">
-            Everything you need to know about JSoft Technologies.
+          {/* DESCRIPTION */}
+          <p className="mt-3 text-gray-600 max-w-2xl mx-auto leading-relaxed text-sm">
+            Answers to the most common questions about our IT,
+            networking, CCTV, branding, and technical support services.
           </p>
-        </div>
+
+        </motion.div>
 
         {/* FAQ LIST */}
-        <div className="space-y-3 bg-amber-50">
+        <div className="space-y-3">
 
           {faqs.map((item, i) => {
             const isOpen = open === i;
@@ -70,45 +101,90 @@ export default function FAQ() {
               <motion.div
                 key={i}
                 layout
-                className={`rounded border-b border-orange-200 transition-all duration-300 ${
+                transition={{
+                  layout: {
+                    duration: 0.3,
+                    type: "spring",
+                  },
+                }}
+                className={`rounded -2xl border-b border-orange-200 backdrop-blur-xl overflow-hidden transition-all duration-300 ${
                   isOpen
-                    ? "bg-amber-50 shadowmd border-orange-200"
-                    : "bg-amber-50 hover:bgwhite border-blue-200"
+                    ? "bg-transparent shadowlg border-orange-200"
+                    : "hover:bg-white border-gray-200 hover:border-orange-200"
                 }`}
               >
 
                 {/* QUESTION */}
                 <button
                   onClick={() => setOpen(isOpen ? null : i)}
-                  className="w-full flex justify-between items-center px-5 py-4 text-left"
+                  className="w-full flex items-center justify-between gap-4 px-5 md:px-6 py-2 text-left"
                 >
-                  <span className="font-medium text-gray-900 text-sm md:text-base">
-                    {item.q}
-                  </span>
 
-                  <ChevronDown
-                    className={`text-blue-900 transition-transform duration-300 ${
-                      isOpen ? "rotate-180" : ""
+                  {/* LEFT */}
+                  <div className="flex items-start gap-3">
+
+                    {/* ICON */}
+                    <div
+                      className={`mt-1 flex-shrink-0 w-8 h-8 rounded-xl flex items-center justify-center transition-all duration-300 ${
+                        isOpen
+                          ? "bg-orange-500 text-white"
+                          : "bg-orange-100 text-orange-500"
+                      }`}
+                    >
+                      <Sparkles size={15} />
+                    </div>
+
+                    {/* QUESTION */}
+                    <h3 className="textsm md:text-base fontsemibold text-gray-900 leading-relaxed">
+                      {item.q}
+                    </h3>
+
+                  </div>
+
+                  {/* CHEVRON */}
+                  <div
+                    className={`flex-shrink-0 w-8 h-8 rounded-full border flex items-center justify-center transition-all duration-300 ${
+                      isOpen
+                        ? "rotate-180 border-orange-300 bg-orange-50 text-orange-500"
+                        : "border-gray-200 text-gray-500"
                     }`}
-                    size={18}
-                  />
+                  >
+                    <ChevronDown size={16} />
+                  </div>
+
                 </button>
 
                 {/* ANSWER */}
                 <AnimatePresence initial={false}>
+
                   {isOpen && (
                     <motion.div
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: "auto", opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.25 }}
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: "auto" }}
+                      exit={{ opacity: 0, height: 0 }}
+                      transition={{ duration: 0.3 }}
                       className="overflow-hidden"
                     >
-                      <div className="px-5 pb-5 text-sm text-gray-700 leading-relaxed border-t border-gray-100">
-                        {item.a}
+
+                      <div className="px-5 md:px-6 pb-3">
+
+                        <div className="pl-11">
+
+                          {/* LINE */}
+                          <div className="h-px w-full bg-gradient-to-r from-orange-200 to-transparent mb-2" />
+
+                          {/* ANSWER TEXT */}
+                          <p className="text-sm text-gray-700 leading-relaxed">
+                            {item.a}
+                          </p>
+
+                        </div>
+
                       </div>
+
                     </motion.div>
                   )}
+
                 </AnimatePresence>
 
               </motion.div>
@@ -118,15 +194,23 @@ export default function FAQ() {
         </div>
 
         {/* CTA */}
-        <div className="hidden text-center mt-14">
+        <motion.div
+          initial={{ opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.15 }}
+          className="text-center mt-10"
+        >
+
           <p className="text-sm text-gray-600">
-            Didn’t find what you’re looking for?
+            Still have questions?
           </p>
 
-          <button className="mt-4 bg-blue-900 hover:bg-blue-950 text-white px-7 py-3 rounded-xl text-sm font-medium transition">
-            Contact JSoft Support
+          <button className="mt-4 bg-orange-500 hover:bg-orange-600 text-white px-7 py-1 rounded-xl text-sm font-medium shadow-lg shadow-orange-500/20 transition-all duration-300 hover:scale-[1.02]">
+            Contact Support
           </button>
-        </div>
+
+        </motion.div>
 
       </div>
     </section>

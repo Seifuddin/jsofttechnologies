@@ -18,18 +18,18 @@ export default function CTA() {
       <div className="relative max-w-2xl mx-auto text-center">
 
         {/* Label */}
-        <p className="text-[10px] tracking-[0.25em] uppercase text-white/40 mb-4">
+        <p className="text-[10px] tracking-[0.25em] uppercase text-orange-400 mb-4">
           One Action • Real Impact
         </p>
 
         {/* Heading */}
-        <h2 className="text-2xl md:text-3xl font-semibold leading-snug">
+        <h2 className="px-4 text-2xl md:text-3xl font-semibold leading-snug">
           Need reliable IT 
-          <span className="text-orange-500"> or security solutions?</span>
+          <span className="text-blue-500"> or security solutions?</span>
         </h2>
 
         {/* Subtext */}
-        <p className="mt-4 text-white/60 text-sm leading-relaxed">
+        <p className="px-4 mt-4 text-white/60 text-sm leading-relaxed">
           JSoft Technologies delivers secure networking, CCTV systems,
           IT support, and digital solutions that keep your business running smoothly.
         </p>

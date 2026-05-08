@@ -197,11 +197,11 @@ export default function ServicesSection() {
               <div className="p-3 flex flex-col justify-center">
 
                 <div className="flex items-center gap-2">
-                  <div className="p-1.5 bg-blue-900 text-white rounded-md">
-                    <Icon size={16} />
+                  <div className="p-1.5 bg-blue900 text-orange-600 rounded-md">
+                    <Icon size={20} />
                   </div>
 
-                  <h3 className="font-semibold text-gray-900">
+                  <h3 className="font-semibold text-blue-950">
                     {s.title}
                   </h3>
                 </div>
@@ -215,9 +215,9 @@ export default function ServicesSection() {
                   {s.subServices.map((item, idx) => (
                     <div
                       key={idx}
-                      className="flex items-center gap-2 text-xs text-gray-700"
+                      className="flex items-center gap-2 text-xs text-blue-950"
                     >
-                      <span className="w-1.5 h-1.5 bg-amber-500 rounded-full" />
+                      <span className="w-1.5 h-1.5 bg-orange-500 rounded-full" />
                       {item}
                     </div>
                   ))}

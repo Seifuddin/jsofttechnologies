@@ -25,7 +25,7 @@ export default function GraphicDesignServices() {
     {
       title: "Flyers & Posters",
       desc: "Attention-grabbing marketing materials designed for reach.",
-      image: "/images/postcard-1.jpeg",
+      image: "/images/orange-color-scheme-city-background-business-book-cover-design-template-brochure-flyer-layout-annual-report-magazine-108070657.webp",
     },
     {
       title: "Logo Design",
@@ -35,7 +35,7 @@ export default function GraphicDesignServices() {
     {
       title: "Social Media Designs",
       desc: "Creative visuals optimized for modern digital platforms.",
-      image: "/images/socialmedia.jpeg",
+      image: "/images/designer-at-work-stockcake.webp",
     },
   ];
 
@@ -51,14 +51,14 @@ export default function GraphicDesignServices() {
       {/* GRID TEXTURE */}
       <div className="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#d1d5db_1px,transparent_1px),linear-gradient(to_bottom,#d1d5db_1px,transparent_1px)] bg-[size:60px_60px]" />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 overflow-hidden">
+      <div className="relative max-w-7xl mx-auto px-6 overflow-hidden">
 
         {/* HEADER */}
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-14"
+          className="text-center mb-9"
         >
 
           <p className="text-xs tracking-[0.3em] text-orange-600 uppercase">
@@ -67,7 +67,7 @@ export default function GraphicDesignServices() {
 
           <h2 className="text-2xl md:text-3xl font-bold mt-3 leading-tight">
             We Don’t Just Design —
-            <span className="text-orange-600">
+            <span className="text-blue-900">
               {" "}We Build Brand Experiences
             </span>
           </h2>
@@ -98,7 +98,7 @@ export default function GraphicDesignServices() {
               }}
               pagination={{ clickable: true }}
               loop={true}
-              className="rounded -[28px] overflow-hidden shadow-2xl w-full"
+              className="rounded -[28px] overflow-hidden w-full"
             >
 
               {products.map((item, i) => (
@@ -153,13 +153,13 @@ export default function GraphicDesignServices() {
             className="lg:col-span-5 w-full min-w-0"
           >
 
-            <p className="hidden text-xs tracking-[0.25em] text-orange-600 uppercase">
+            <p className="hidden text-xs tracking-[0.25em] text-blue-900 uppercase">
               What We Create
             </p>
 
-            <h2 className="text-2xl md:text-3xl font-semibold mt-3 leading-tight">
+            <h2 className="text-xl mdtext-3xl font-semibold mt-3 leading-tight text-blue-900">
               Design That Shapes
-              <span className="text-orange-600">
+              <span className="text-blue-900">
                 {" "}Business Perception
               </span>
             </h2>
@@ -217,7 +217,7 @@ function DesignPillar({ title, desc }) {
       {/* CONTENT */}
       <div>
 
-        <h4 className="text-sm md:text-base font-semibold text-gray-900">
+        <h4 className="text-sm md:text-base font-semibold text-blue-950">
           {title}
         </h4>
 
