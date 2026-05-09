@@ -58,7 +58,7 @@ export default function AboutUs() {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-[#020817] text-white pt-20 py-12 md:py-16">
+    <section className="relative overflow-hidden bg-[#020817] text-white py-12 md:py-16">
       {/* Background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 left-[-100px] w-[240px] h-[240px] bg-cyan-500/10 blur-3xl rounded-full"></div>
