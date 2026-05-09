@@ -1,31 +1,38 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, Globe, ShieldCheck, Cpu } from "lucide-react";
+import { Mail, Globe, ShieldCheck } from "lucide-react";
 
 export default function TeamSection() {
   const team = [
     {
-      name: "John Kamau",
+      name: "Joseph Opere",
       role: "Founder & Network Engineer",
       desc: "Enterprise networking & infrastructure architecture specialist.",
+      img: "/images/edited-photo.png",
     },
     {
       name: "Sarah Wanjiku",
       role: "CCTV Systems Lead",
       desc: "Security systems design, surveillance & monitoring solutions.",
+      img: "/images/IMG-20250804-WA0003~2.jpg",
     },
     {
       name: "David Otieno",
       role: "IT Support Engineer",
       desc: "Fast-response IT support & system troubleshooting expert.",
+      img: "/images/edited-photo.png",
     },
     {
       name: "Brian Mwangi",
       role: "Creative Media Designer",
       desc: "Branding, motion graphics & digital experience designer.",
+      img: "/images/IMG-20250804-WA0003~2.jpg",
     },
   ];
+
+  const featured = team[0];
+  const others = team.slice(1);
 
   return (
     <section className="relative bg-amber-50 py-14 overflow-hidden">
@@ -49,7 +56,7 @@ export default function TeamSection() {
             Meet The Team
           </div>
 
-          <h2 className="text-3xl md:text-5xl font-black text-gray-900 mt-3 leading-tight">
+          <h2 className="text-2xl md:text-3xl font-black text-gray-900 mt-3 leading-tight">
             The Minds Behind
             <span className="block text-orange-500">JSoft Technologies</span>
           </h2>
@@ -65,18 +72,22 @@ export default function TeamSection() {
           {/* Featured Member */}
           <motion.div
             whileHover={{ scale: 1.02 }}
-            className="lg:row-span-2 bg-white rounded-3xl p-6 border border-orange-100 shadow-lg relative overflow-hidden"
+            className="lg:row-span-2 bg-white rounded-3xl border border-orange-100 shadow-lg relative overflow-hidden"
           >
-            <div className="absolute top-0 right-0 w-40 h-40 bg-orange-100 blur-3xl rounded-full"></div>
+            {/* IMAGE */}
+            <div className="h-72 w-full overflow-hidden">
+              <img
+                src={featured.img}
+                alt={featured.name}
+                className="w-full h-full object-cover hover:scale-105 transition duration-300"
+              />
+            </div>
 
-            <div className="relative z-10">
-              <div className="w-14 h-14 rounded-2xl bg-orange-500 text-white flex items-center justify-center mb-5">
-                <Cpu className="w-6 h-6" />
-              </div>
+            <div className="p-6 relative">
+              <h3 className="text-xl font-bold">{featured.name}</h3>
 
-              <h3 className="text-xl font-bold">John Kamau</h3>
               <p className="text-orange-500 text-sm font-medium">
-                Founder & Network Engineer
+                {featured.role}
               </p>
 
               <p className="text-gray-600 text-sm mt-4 leading-relaxed">
@@ -92,20 +103,26 @@ export default function TeamSection() {
           </motion.div>
 
           {/* Side Members */}
-          {team.slice(1).map((member, index) => (
+          {others.map((member, index) => (
             <motion.div
               key={index}
               whileHover={{ y: -6 }}
-              className="bg-white rounded-2xl p-5 border border-orange-100 shadow-sm hover:shadow-md transition relative overflow-hidden"
+              className="bg-white rounded-2xl border border-orange-100 shadow-sm hover:shadow-md transition overflow-hidden"
             >
-              <div className="absolute inset-0 opacity-0 hover:opacity-100 bg-gradient-to-r from-orange-50 to-cyan-50 transition" />
+              {/* IMAGE */}
+              <div className="h-36 w-full overflow-hidden">
+                <img
+                  src={member.img}
+                  alt={member.name}
+                  className="w-full h-full object-cover hover:scale-105 transition duration-300"
+                />
+              </div>
 
-              <div className="relative z-10">
-                <div className="w-11 h-11 rounded-xl bg-orange-100 text-orange-500 flex items-center justify-center mb-4">
-                  <Cpu className="w-5 h-5" />
-                </div>
+              <div className="p-5">
+                <h3 className="font-bold text-gray-900">
+                  {member.name}
+                </h3>
 
-                <h3 className="font-bold text-gray-900">{member.name}</h3>
                 <p className="text-xs text-orange-500 font-medium mt-1">
                   {member.role}
                 </p>
