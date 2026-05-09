@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
       <body>
         <Navbar />
         <WhatsAppButton />
-        <div className="overflow-x-hidden">{children}</div>
+        <div className="overflow-x-hidden ">{children}</div>
         <Footer />
       </body>
     </html>

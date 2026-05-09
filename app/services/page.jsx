@@ -1,11 +1,11 @@
 import ServicesSection from "../components/Services";
+import TechnologyCTA from "../components/TechCTA";
 
 export default function ServicesPage() {
   return (
-    <div className="overflow-x-hidden bg-amber-50">
-      <main className="pt-10">
+    <div className="overflow-x-hidden pt-20">
+        <TechnologyCTA />
         <ServicesSection />
-      </main>
     </div>
   );
 }
