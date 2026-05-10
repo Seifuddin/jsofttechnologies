@@ -30,7 +30,7 @@ export default function CTA() {
 
         {/* Subtext */}
         <p className="px-4 mt-4 text-white/60 textsm leading-relaxed">
-          JSoft Technologies delivers secure networking, CCTV systems,
+          JSoft Technologies KE delivers secure networking, CCTV systems,
           IT support, and digital solutions that keep your business running smoothly.
         </p>
 
@@ -65,7 +65,7 @@ export default function CTA() {
 
         {/* Micro trust line */}
         <p className="mt-6 text-[10px] text-white/40">
-          Secure • Professional • Nairobi-based experts
+          Secure • Professional • Kisumu-based experts
         </p>
       </div>
     </section>

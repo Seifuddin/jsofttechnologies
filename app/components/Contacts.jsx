@@ -20,17 +20,17 @@ export default function ContactPage() {
     {
       icon: <Phone className="w-4 h-4" />,
       title: "Call Us",
-      value: "+254 700 123 456",
+      value: "+254 759 177 042",
     },
     {
       icon: <Mail className="w-4 h-4" />,
       title: "Email",
-      value: "info@jsofttechnologies.com",
+      value: "jsofttechnologieske@gmail.com",
     },
     {
       icon: <MapPin className="w-4 h-4" />,
       title: "Office",
-      value: "Nairobi, Kenya",
+      value: "Kisumu, Kenya",
     },
     {
       icon: <Clock3 className="w-4 h-4" />,
@@ -82,7 +82,7 @@ export default function ContactPage() {
             <div>
               <div className="inline-flex items-center gap-2 bg-white/10 border border-orange-500/20 px-4 py-2 rounded-full text-orange-400 text-[11px] fontsemibold tracking-wide backdrop-blur-md mb-5">
                 <Headphones className="w-3.5 h-3.5" />
-                CONTACT JSOFT TECHNOLOGIES
+                CONTACT JSOFT TECHNOLOGIES KE
               </div>
 
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-black leading-[1] tracking-tight">

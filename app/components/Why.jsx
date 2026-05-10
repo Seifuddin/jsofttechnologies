@@ -185,7 +185,7 @@ export default function WhyChooseUs() {
 
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-orange-400 rounded-full" />
-                Nairobi-based engineers
+                Kisumu-based engineers
               </div>
 
               <div className="flex items-center gap-2">

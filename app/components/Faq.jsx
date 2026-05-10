@@ -10,12 +10,12 @@ import {
 
 const faqs = [
   {
-    q: "What services does JSoft Technologies offer?",
+    q: "What services does JSoft Technologies KE offer?",
     a: "We provide network installation, CCTV systems, IT support, managed IT services, graphic design, and photography/videography solutions for businesses.",
   },
   {
-    q: "Do you offer on-site support in Nairobi?",
-    a: "Yes. We provide on-site installation and technical support across Nairobi and surrounding areas depending on project scope.",
+    q: "Do you offer on-site support in Kisumu?",
+    a: "Yes. We provide on-site installation and technical support across Kisumu and surrounding areas depending on project scope.",
   },
   {
     q: "How fast can you respond to IT issues?",

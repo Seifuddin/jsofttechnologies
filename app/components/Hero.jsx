@@ -35,7 +35,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-2xl md:text-4xl font-semibold leading-tight mt-5"
+            className="text-3xl md:text-4xl font-semibold leading-tight mt-5"
           >
             Build & Secure{" "}
             <span className="text-blue-400">Digital Systems</span>{" "}
@@ -49,7 +49,7 @@ export default function Hero() {
             transition={{ delay: 0.2 }}
             className="mt-4 text-gray-300 text-base max-w-xl"
           >
-            JSoft Technologies delivers enterprise network installation,
+            JSoft Technologies KE delivers enterprise network installation,
             CCTV security systems, IT support, and creative media solutions.
           </motion.p>
 

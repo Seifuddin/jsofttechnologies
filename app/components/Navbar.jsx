@@ -37,7 +37,7 @@ export default function Navbar() {
 
         {/* LOGO */}
         <h1 className="text-xl md:text-2xl font-bold text-blue-700">
-          JSoft <span className="text-amber-500">Technologies</span>
+          JSoft <span className="text-amber-500">Technologies KE</span>
         </h1>
 
         {/* DESKTOP MENU */}

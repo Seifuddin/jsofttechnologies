@@ -131,7 +131,7 @@ export default function Call() {
             <div className="mt-4">
 
               <a
-                href="tel:+254754784931"
+                href="tel:+254759177042"
                 className="group inline-flex items-center gap-3 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-8 py-2 rounded-2xl font-semibold shadow-xl shadow-green-500/20 transition-all duration-300 hover:scale-[1.03]"
               >
 
@@ -148,7 +148,7 @@ export default function Call() {
                   </p>
 
                   <p className="text-sm md:text-base font-bold">
-                    +254 754 784 931
+                    +254 759 177 042
                   </p>
 
                 </div>

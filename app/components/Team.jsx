@@ -33,7 +33,7 @@ export default function TeamSection() {
       name: "Muriithi Nguru",
       role: "Web Developer & Software Engineer ",
       desc: "World class Web development and Software Engineering Specialist",
-      img: "/images/Screenshot_20221028-140517.png",
+      img: "/images/1765669389666~2.jpg",
     },
   ];
 
@@ -64,7 +64,7 @@ export default function TeamSection() {
 
           <h2 className="text-2xl md:text-3xl font-black text-gray-900 mt-3 leading-tight">
             The Minds Behind
-            <span className="bock text-blue-900"> JSoft Technologies</span>
+            <span className="bock text-blue-900"> JSoft Technologies KE</span>
           </h2>
 
           <p className="text-gray-700 mt-4 max-wxl">
@@ -98,7 +98,7 @@ export default function TeamSection() {
 
               <p className="text-gray-600 text-sm mt-4 leading-relaxed">
                 Enterprise networking & infrastructure architecture specialist
-                leading JSoft Technologies with modern scalable systems.
+                leading JSoft Technologies KE with modern scalable systems.
               </p>
 
               <div className="flex gap-3 mt-6 text-gray-500">

@@ -25,7 +25,7 @@ export default function Footer() {
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 rounded-md bg-gradient-to-br from-blue-600 to-amber-500" />
               <h2 className="text-xl font-semibold">
-                JSoft <span className="text-orange-400">Technologies</span>
+                JSoft <span className="text-orange-400">Technologies KE</span>
               </h2>
             </div>
 
@@ -65,9 +65,9 @@ export default function Footer() {
 
             <ul className="space-y-2 text-sm text-white/60">
               <li className="hover:text-white transition"><Link href="/">Home</Link></li>
-              <li className="hover:text-white transition"><Link href="#services">Services</Link></li>
-              <li className="hover:text-white transition"><Link href="#about">About</Link></li>
-              <li className="hover:text-white transition"><Link href="#contact">Contact</Link></li>
+              <li className="hover:text-white transition"><Link href="/services">Services</Link></li>
+              <li className="hover:text-white transition"><Link href="/about">About</Link></li>
+              <li className="hover:text-white transition"><Link href="/contacts">Contact</Link></li>
             </ul>
           </div>
 
@@ -81,17 +81,17 @@ export default function Footer() {
 
               <div className="flex items-center gap-2">
                 <Phone size={16} className="text-orange-400" />
-                +254 754 784 931
+                +254 759 177 042
               </div>
 
               <div className="flex items-center gap-2">
                 <Mail size={16} className="text-orange-400" />
-                info@jsoft.co.ke
+                jsofttechnologieske@gmail.com
               </div>
 
               <div className="flex items-center gap-2">
                 <MapPin size={16} className="text-orange-400" />
-                Nairobi, Kenya
+                Kisumu, Kenya
               </div>
 
             </div>
@@ -103,7 +103,7 @@ export default function Footer() {
         <div className="border-t border-white/10 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
 
           <p className="text-xs text-white/40">
-            © {new Date().getFullYear()} JSoft Technologies. All rights reserved.
+            © {new Date().getFullYear()} JSoft Technologies KE. All rights reserved.
           </p>
         
 

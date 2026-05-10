@@ -32,7 +32,7 @@ export default function TechnologyCTA() {
             {/* Left */}
             <div>
               <p className="text-orange-400 uppercase tracking-[0.3em] text-xs mb-4">
-                JSOFT TECHNOLOGIES
+                OUR SERVICES
               </p>
 
               <h3 className="text-2xl md:text-4xl font-black leading-tight mb-6 text-white">

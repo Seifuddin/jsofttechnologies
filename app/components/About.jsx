@@ -79,7 +79,7 @@ export default function AboutUs() {
         >
           <div className="inline-flex items-center gap-2 bg-white/10 border border-orange-500/20 px-4 py-2 rounded-full text-orange-400 text-xs font-medium mb-4 backdrop-blur-md">
             <Sparkles className="w-3.5 h-3.5" />
-            ABOUT JSOFT TECHNOLOGIES
+            ABOUT JSOFT TECHNOLOGIES KE
           </div>
 
           <h2 className="text-3xl sm:text-3xl md:text-4xl font-black leading-tight">
