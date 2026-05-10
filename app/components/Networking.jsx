@@ -44,7 +44,7 @@ export default function NetworkSystemWorldClass() {
 
           <h2 className="text-2xl md:text-3xl font-semibold mt-2">
             Networks That Power{" "}
-            <span className="text-blue-900">Modern Businesses</span>
+            <span className="text-blue-950">Modern Businesses</span>
           </h2>
 
           <p className="text-gray-700 mt-3 max-w-2xl mx-auto textsm">
@@ -112,9 +112,9 @@ export default function NetworkSystemWorldClass() {
             className="lg:col-span-5"
           >
 
-            <h2 className="text-xl font-semibold mt-2 text-blue-900">
+            <h2 className="text-xl fontsemibold mt-2 text-gray-900">
               We Build Networks{" "}
-              <span className="text-blue-900"> That Never Fail</span>
+              <span className="text-gray-900"> That Never Fail</span>
             </h2>
 
             <p className="text-gray-700 mt-4 text-sm leading-relaxed max-w-xl">
@@ -190,7 +190,7 @@ function Feature({ icon, title, desc }) {
       <div className="text-orange-600 mt-1">{icon}</div>
 
       <div>
-        <h4 className="font-semibold text-blue-900">{title}</h4>
+        <h4 className="font-semibold text-blue-950">{title}</h4>
         <p className="text-sm text-gray-700">{desc}</p>
       </div>
     </div>

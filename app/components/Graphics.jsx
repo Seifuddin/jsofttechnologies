@@ -67,7 +67,7 @@ export default function GraphicDesignServices() {
 
           <h2 className="text-2xl md:text-3xl font-bold mt-3 leading-tight">
             We Don’t Just Design —
-            <span className="text-blue-900">
+            <span className="text-blue-950">
               {" "}We Build Brand Experiences
             </span>
           </h2>
@@ -153,13 +153,13 @@ export default function GraphicDesignServices() {
             className="lg:col-span-5 w-full min-w-0"
           >
 
-            <p className="hidden text-xs tracking-[0.25em] text-blue-900 uppercase">
+            <p className="hidden text-xs tracking-[0.25em] text-blue-950 uppercase">
               What We Create
             </p>
 
-            <h2 className="text-xl mdtext-3xl font-semibold mt-3 leading-tight text-blue-900">
+            <h2 className="text-xl mdtext-3xl fontsemibold mt-3 leading-tight text-gray-900">
               Design That Shapes
-              <span className="text-blue-900">
+              <span className="text-gray-900">
                 {" "}Business Perception
               </span>
             </h2>
@@ -217,7 +217,7 @@ function DesignPillar({ title, desc }) {
       {/* CONTENT */}
       <div>
 
-        <h4 className="text-smmd:text-base font-semibold text-blue-900">
+        <h4 className="text-smmd:text-base font-semibold text-blue-950">
           {title}
         </h4>
 

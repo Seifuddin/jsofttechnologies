@@ -157,7 +157,7 @@ export default function ServicesSection() {
 
       {/* HEADER */}
       <div className="text-center max-w-3xl mx-auto px-6">
-        <p className="text-xs tracking-[0.3em] uppercase text-orange-600">
+        <p className="text-xs mb-2 tracking-[0.3em] uppercase text-orange-600">
             Our Services 
           </p>
         <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
@@ -196,12 +196,12 @@ export default function ServicesSection() {
               {/* CONTENT */}
               <div className="p-3 flex flex-col justify-center">
 
-                <div className="flex items-center gap-2">
-                  <div className="p-1.5 bg-blue900 text-orange-600 rounded-md">
+                <div className="flex items-center gap-1">
+                  <div className="p-1 bg-blue900 text-orange-600 rounded-md">
                     <Icon size={20} />
                   </div>
 
-                  <h3 className="font-semibold text-blue-900">
+                  <h3 className="font-semibold text-blue-950">
                     {s.title}
                   </h3>
                 </div>
@@ -231,7 +231,7 @@ export default function ServicesSection() {
                       setActive(s);
                       setOpen(true);
                     }}
-                    className="flex-1 bg-blue-900 hover:bg-blue-950 text-white text-sm py-1 rounded hover:bg-blue-50"
+                    className="flex-1 bg-blue-950 hover:bg-blue-950 text-white text-sm py-1 rounded hover:bg-blue-50"
                   >
                     View
                   </button>

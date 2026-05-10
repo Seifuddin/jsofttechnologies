@@ -53,7 +53,7 @@ export default function WhyChooseUs() {
 
           <h2 className="mt-4 text-2xl md:text-3xl font-bold leading-tight text-gray-900 max-w-xl">
             We engineer systems that stay
-            <span className="text-blue-900"> secure, stable, and reliable.</span>
+            <span className="text-blue-950"> secure, stable, and reliable.</span>
           </h2>
 
           <p className="mt-5 text-gray-600 leading-relaxed text-smmd:text-base max-w-lg">
@@ -82,7 +82,7 @@ export default function WhyChooseUs() {
                   </div>
 
                   <div>
-                    <h3 className="font-semibold text-blue-900 text-smmd:text-base">
+                    <h3 className="font-semibold text-blue-950 text-smmd:text-base">
                       {item.title}
                     </h3>
 

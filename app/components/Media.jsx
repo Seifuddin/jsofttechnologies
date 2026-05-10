@@ -39,7 +39,7 @@ export default function CinematicStudioCompact() {
           {/* HERO IMAGE */}
           <motion.div
             whileHover={{ scale: 1.01 }}
-            className="lg:col-span-7 relative h-[300px] md:h-[360px] rounded-xl overflow-hidden group"
+            className="lg:col-span-7 relative h-[300px] md:h-[360px] rounded -xl overflow-hidden group"
           >
             <Image
               src="/images/Videography-Services-in-Prescott.webp"
@@ -64,7 +64,7 @@ export default function CinematicStudioCompact() {
             {/* VIDEO */}
             <motion.div
               whileHover={{ scale: 1.02 }}
-              className="relative h-[170px] rounded-xl overflow-hidden group"
+              className="relative h-[170px] rounded -xl overflow-hidden group"
             >
               <Image
                 src="/images/videography-service.png"
@@ -101,7 +101,7 @@ export default function CinematicStudioCompact() {
             </motion.div>
 
             {/* STORY CARD */}
-            <div className="hidden relative h-[170px] rounded-xl bg-white/5 border border-white/10 backdrop-blur-xl p-4 overflow-hidden">
+            <div className="hidden relative h-[170px] rounded -xl bg-white/5 border border-white/10 backdrop-blur-xl p-4 overflow-hidden">
               <h4 className="text-base font-semibold">Creative Direction</h4>
               <p className="text-gray-400 text-xs mt-2 leading-relaxed">
                 Film-inspired composition, lighting, and storytelling in every frame.

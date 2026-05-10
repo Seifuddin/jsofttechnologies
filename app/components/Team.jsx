@@ -57,7 +57,7 @@ export default function TeamSection() {
           viewport={{ once: true }}
           className="mb-10 text-center"
         >
-          <div className="flex items-center justify-center gap-2 text-orange-600 text-xs font-semibold uppercase tracking-widest">
+          <div className="flex items-center justify-center gap-2 text-orange-600 text-xs fontsemibold uppercase tracking-widest">
             <ShieldCheck className="w-4 h-4" />
             Meet The Team
           </div>

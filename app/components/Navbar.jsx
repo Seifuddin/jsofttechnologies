@@ -57,7 +57,7 @@ export default function Navbar() {
           {/* CTA BUTTON */}
           <Link
             href="#contact"
-            className="bg-orange-500 text-white px-6 py-1 rounded-lg fontsemibold shadowmd hover:bg-amber-600 hover:shadow-lg transition"
+            className="bg-orange-500 text-white px-6 py-1 rounded -lg fontsemibold shadowmd hover:bg-amber-600 hover:shadow-lg transition"
           >
             Get a Quote
           </Link>
@@ -91,9 +91,9 @@ export default function Navbar() {
           ))}
 
           <Link
-            href="#contact"
+            href="/contacts"
             onClick={() => setOpen(false)}
-            className="bg-orange-500 text-white px-3 py-1 rounded-lg text-center fontsemibold hover:bg-orange-600 transition"
+            className="bg-orange-500 text-white px-3 py-1 rounded -lg text-center fontsemibold hover:bg-orange-600 transition"
           >
             Get a Quote
           </Link>

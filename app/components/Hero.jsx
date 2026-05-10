@@ -24,7 +24,7 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="inline-flex items-center gap-2 px-4 py-1 rounded-full border border-white/10 bg-white/5 text-sm text-orange-500"
+            className="inline-flex items-center gap-2 px-4 py-1 rounded-full border border-white/10 bg-white/5 text-xs text-orange-500"
           >
             <Cpu size={14} />
             IT • SECURITY • INFRASTRUCTURE • MEDIA
@@ -35,10 +35,10 @@ export default function Hero() {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-3xl md:text-5xl font-semibold leading-tight mt-5"
+            className="text-2xl md:text-4xl font-semibold leading-tight mt-5"
           >
             Build & Secure{" "}
-            <span className="text-orange-500">Digital Systems</span>{" "}
+            <span className="text-blue-400">Digital Systems</span>{" "}
             That Power Your Business
           </motion.h1>
 
@@ -60,11 +60,11 @@ export default function Hero() {
             transition={{ delay: 0.3 }}
             className="flex flex-wrap gap-4 mt-6"
           >
-            <button className="bg-orange-500 hover:bg-amber-600 px-4 py-2 rounded-full fontsemibold flex items-center gap-2 transition shadow-lg">
+            <button className="bg-orange-500 hover:bg-amber-600 px-4 py-1 rounded -full fontsemibold flex items-center gap-2 transition shadow-lg">
               Get Consultation <ArrowRight size={18} />
             </button>
 
-            <button className="border border-white/15 px-4 py-2 rounded-full hover:bg-white hover:text-[#070B1A] transition">
+            <button className="border border-white/15 px-4 py-1 rounded -full hover:bg-white hover:text-[#070B1A] transition">
               View Services
             </button>
           </motion.div>
@@ -100,10 +100,10 @@ export default function Hero() {
         >
 
           {/* image container */}
-          <div className="relative w-full h-[400px] md:h-[500px] rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+          <div className="relative w-full h-[350px] md:h-[400px] rounded overflow-hidden border border-white/10 shadow-2xl">
 
             <Image
-              src="/images/Networking_171983987.jpg" // 🔥 replace with your image path
+              src="/images/technicien-soutien-informatique-1.jpg" // 🔥 replace with your image path
               alt="IT Infrastructure"
               fill
               className="object-cover"

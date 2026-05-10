@@ -35,7 +35,7 @@ export default function TechnologyCTA() {
                 JSOFT TECHNOLOGIES
               </p>
 
-              <h3 className="text-3xl md:text-5xl font-black leading-tight mb-6 text-white">
+              <h3 className="text-2xl md:text-4xl font-black leading-tight mb-6 text-white">
                 Delivering Secure, Smart &
                 <span className="text-blue-400">
                   {" "}
@@ -52,10 +52,10 @@ export default function TechnologyCTA() {
 
             {/* Right */}
             <div className="grid grid-cols-2 gap-4">
-              <div className="bg-white/5 border border-white/10 rounded -2xl p-5">
-                <Camera className="w-9 h-9 text-orange-400 mb-4" />
+              <div className="bg-white/5 border border-white/10 rounded -2xl p-2">
+                <Camera className="w-7 h-7 text-orange-400 mb-4" />
 
-                <h4 className="font-bold text-lg mb-2 text-white">
+                <h4 className="font-bold textlg mb-2 text-white">
                   CCTV Systems
                 </h4>
 
@@ -64,10 +64,10 @@ export default function TechnologyCTA() {
                 </p>
               </div>
 
-              <div className="bg-white/5 border border-white/10 rounded-2xl p-5">
-                <RadioTower className="w-9 h-9 text-orange-400 mb-4" />
+              <div className="bg-white/5 border border-white/10 rounded -2xl p-2">
+                <RadioTower className="w-7 h-7 text-orange-400 mb-4" />
 
-                <h4 className="font-bold text-lg mb-2 text-white">
+                <h4 className="font-bold textlg mb-2 text-white">
                   Networking
                 </h4>
 
@@ -76,10 +76,10 @@ export default function TechnologyCTA() {
                 </p>
               </div>
 
-              <div className="bg-white/5 border border-white/10 rounded-2xl p-5">
-                <Headphones className="w-9 h-9 text-orange-400 mb-4" />
+              <div className="bg-white/5 border border-white/10 rounded -2xl p-2">
+                <Headphones className="w-7 h-7 text-orange-400 mb-4" />
 
-                <h4 className="font-bold text-lg mb-2 text-white">
+                <h4 className="font-bold textlg mb-2 text-white">
                   IT Support
                 </h4>
 
@@ -88,10 +88,10 @@ export default function TechnologyCTA() {
                 </p>
               </div>
 
-              <div className="bg-white/5 border border-white/10 rounded-2xl p-5">
-                <Globe className="w-9 h-9 text-orange-400 mb-4" />
+              <div className="bg-white/5 border border-white/10 rounded -2xl p-2">
+                <Globe className="w-7 h-7 text-orange-400 mb-4" />
 
-                <h4 className="font-bold text-lg mb-2 text-white">
+                <h4 className="font-bold textlg mb-2 text-white">
                   Creative Media
                 </h4>
 
