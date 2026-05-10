@@ -3,7 +3,7 @@ import TechnologyCTA from "../components/TechCTA";
 
 export default function ServicesPage() {
   return (
-    <div className="overflow-x-hidden pt-20">
+    <div className="overflow-x-hidden mt-0 pt-10 md:pt-20">
         <TechnologyCTA />
         <ServicesSection />
     </div>

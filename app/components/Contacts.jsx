@@ -70,7 +70,7 @@ export default function ContactPage() {
           <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:65px_65px]"></div>
         </div>
 
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 25 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -80,14 +80,14 @@ export default function ContactPage() {
           >
             {/* Left Content */}
             <div>
-              <div className="inline-flex items-center gap-2 bg-white/10 border border-orange-500/20 px-4 py-2 rounded-full text-orange-400 text-[11px] font-semibold tracking-wide backdrop-blur-md mb-5">
+              <div className="inline-flex items-center gap-2 bg-white/10 border border-orange-500/20 px-4 py-2 rounded-full text-orange-400 text-[11px] fontsemibold tracking-wide backdrop-blur-md mb-5">
                 <Headphones className="w-3.5 h-3.5" />
                 CONTACT JSOFT TECHNOLOGIES
               </div>
 
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-black leading-[1] tracking-tight">
                 Let’s Build
-                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-orange-400 to-orange-500">
+                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-400 to-blue-500">
                   Something Great
                 </span>
               </h1>
@@ -99,13 +99,13 @@ export default function ContactPage() {
 
               {/* Buttons */}
               <div className="flex flex-wrap gap-3 mt-6">
-                <button className="group inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold px-5 py-3 rounded-2xl shadow-[0_0_30px_rgba(249,115,22,0.3)] hover:scale-[1.03] transition-all duration-300 text-sm">
+                <button className="group inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-orange-600 text-white fontsemibold px-3 py-2 rounded -2xlshadow-[0_0_30px_rgba(249,115,22,0.3)] hover:scale-[1.03] transition-all duration-300 text-sm">
                   Start A Project
 
                   <ArrowUpRight className="w-4 h-4 group-hover:-translate-y-1 group-hover:translate-x-1 transition" />
                 </button>
 
-                <button className="inline-flex items-center gap-2 border border-white/10 bg-white/5 backdrop-blur-md text-white font-medium px-5 py-3 rounded-2xl hover:bg-white/10 transition-all duration-300 text-sm">
+                <button className="inline-flex items-center gap-2 border border-white/10 bg-white/5 backdrop-blur-md text-white font-medium px-3 py-2 rounded -2xl hover:bg-white/10 transition-all duration-300 text-sm">
                   Explore Services
                 </button>
               </div>
@@ -121,7 +121,7 @@ export default function ContactPage() {
               }}
               className="relative"
             >
-              <div className="relative overflow-hidden rounded-[28px] border border-white/10 bg-white/5 backdrop-blur-2xl p-5 shadow-[0_0_50px_rgba(0,0,0,0.3)]">
+              <div className="relative overflow-hidden rounded -[28px] border border-white/10 bg-white/5 backdrop-blur-2xl p-5 shadow-[0_0_50px_rgba(0,0,0,0.3)]">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-orange-500/20 blur-3xl rounded-full"></div>
 
                 <div className="absolute bottom-0 left-0 w-32 h-32 bg-cyan-500/20 blur-3xl rounded-full"></div>
@@ -138,7 +138,7 @@ export default function ContactPage() {
                       </h3>
                     </div>
 
-                    <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center shadow-lg shadow-orange-500/20">
+                    <div className="w-11 h-11 rounded -xl bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center shadow-lg shadow-orange-500/20">
                       <Send className="w-5 h-5 text-white" />
                     </div>
                   </div>
@@ -151,10 +151,10 @@ export default function ContactPage() {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ delay: index * 0.06 }}
                         viewport={{ once: true }}
-                        className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] p-3 hover:border-orange-500/30 transition-all duration-300"
+                        className="group relative overflow-hidden rounded -2xl border border-white/10 bg-white/[0.04] p-3 hover:border-orange-500/30 transition-all duration-300"
                       >
                         <div className="relative z-10 flex items-center gap-3">
-                          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-orange-500/20 to-orange-600/20 border border-orange-500/20 flex items-center justify-center text-orange-400 shrink-0">
+                          <div className="w-8 h-8 rounded -xl bg-gradient-to-br from-orange-500/20 to-orange-600/20 border border-orange-500/20 flex items-center justify-center text-orange-400 shrink-0">
                             {item.icon}
                           </div>
 
@@ -172,7 +172,7 @@ export default function ContactPage() {
                     ))}
                   </div>
 
-                  <div className="mt-5 rounded-2xl bg-gradient-to-r from-orange-500/15 to-cyan-500/10 border border-orange-500/20 p-4">
+                  <div className="mt-5 rounded -2xl bg-gradient-to-r from-orange-500/15 to-cyan-500/10 border border-orange-500/20 p-4">
                     <p className="text-sm text-gray-300 leading-relaxed">
                       We create secure, scalable, and future-ready technology
                       solutions for businesses and organizations.
@@ -193,7 +193,7 @@ export default function ContactPage() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
-            className="relative overflow-hidden rounded-[30px] bg-white border border-orange-100 shadow-[0_20px_60px_rgba(0,0,0,0.06)]"
+            className="relative overflow-hidden rounded -[30px] bg-white border border-gray-200 shadow[0_20px_60px_rgba(0,0,0,0.06)]"
           >
             {/* Background Glow */}
             <div className="absolute top-0 left-0 w-52 h-52 bg-orange-100 blur-3xl rounded-full opacity-60"></div>
@@ -203,18 +203,18 @@ export default function ContactPage() {
             <div className="relative z-10 grid lg:grid-cols-[0.85fr_1.15fr]">
               {/* Left Features */}
               <div className="bg-[#fff8ec] p-6 sm:p-7 border-b lg:border-b-0 lg:border-r border-orange-100">
-                <p className="text-orange-500 uppercase tracking-[0.25em] text-[10px] font-semibold mb-3">
+                <p className="text-orange-500 uppercase tracking-[0.25em] text-[10px] fontsemibold mb-3">
                   OUR EXPERTISE
                 </p>
 
-                <h2 className="text-2xl sm:text-3xl font-black text-gray-900 leading-tight mb-4">
+                <h2 className="text-xl smtext-3xl font-black text-gray-900 leading-tight mb-4">
                   Technology That
-                  <span className="block text-orange-500">
+                  <span className="block text-blue-950">
                     Moves Businesses
                   </span>
                 </h2>
 
-                <p className="text-gray-600 leading-relaxed text-sm mb-5">
+                <p className="text-gray-700 leading-relaxed text-sm mb-5">
                   Innovative solutions combining networking, security systems,
                   IT support, and creative media services.
                 </p>
@@ -223,18 +223,18 @@ export default function ContactPage() {
                   {features.map((item, index) => (
                     <div
                       key={index}
-                      className="flex items-start gap-3 bg-white border border-orange-100 rounded-2xl p-3 shadow-sm"
+                      className="flex items-start gap-3 bg-white border border-gray-200 rounded -2xl p-1 shadowsm"
                     >
-                      <div className="w-10 h-10 rounded-xl bg-orange-100 flex items-center justify-center text-orange-500 shrink-0">
+                      <div className="w-9 h-9 rounded -xl bg-orange-100 flex items-center justify-center text-orange-500 shrink-0">
                         {item.icon}
                       </div>
 
                       <div>
-                        <h4 className="font-semibold text-gray-800 text-sm mb-1">
+                        <h4 className="font-semibold text-blue-950 text-sm mb-1">
                           {item.title}
                         </h4>
 
-                        <p className="text-xs text-gray-600 leading-relaxed">
+                        <p className="text-xs text-gray-700 leading-relaxed">
                           {item.desc}
                         </p>
                       </div>
@@ -246,11 +246,11 @@ export default function ContactPage() {
               {/* Right Form */}
               <div className="p-6 sm:p-7">
                 <div className="mb-6">
-                  <p className="text-orange-500 uppercase tracking-[0.25em] text-[10px] font-semibold mb-3">
+                  <p className="text-orange-500 uppercase tracking-[0.25em] text-[10px] fontsemibold mb-3">
                     START A CONVERSATION
                   </p>
 
-                  <h3 className="text-2xl sm:text-3xl font-black text-gray-900 mb-3">
+                  <h3 className="text-xl smtext-3xl font-black text-blue-950 mb-3">
                     Send Us A Message
                   </h3>
 
@@ -265,31 +265,31 @@ export default function ContactPage() {
                     <input
                       type="text"
                       placeholder="Full Name"
-                      className="w-full bg-[#fffaf2] border border-orange-100 focus:border-orange-400 rounded-2xl px-4 py-3 outline-none text-sm text-gray-800 placeholder:text-gray-500 transition"
+                      className="w-full bg-[#fffaf2] border border-gray-200 focus:border-orange-400 rounded -2xl px-4 py-3 outline-none text-sm text-gray-800 placeholder:text-gray-500 transition"
                     />
 
                     <input
                       type="text"
                       placeholder="Phone Number"
-                      className="w-full bg-[#fffaf2] border border-orange-100 focus:border-orange-400 rounded-2xl px-4 py-3 outline-none text-sm text-gray-800 placeholder:text-gray-500 transition"
+                      className="w-full bg-[#fffaf2] border border-gray-200 focus:border-orange-400 rounded -2xl px-4 py-3 outline-none text-sm text-gray-800 placeholder:text-gray-500 transition"
                     />
                   </div>
 
                   <input
                     type="email"
                     placeholder="Email Address"
-                    className="w-full bg-[#fffaf2] border border-orange-100 focus:border-orange-400 rounded-2xl px-4 py-3 outline-none text-sm text-gray-800 placeholder:text-gray-500 transition"
+                    className="w-full bg-[#fffaf2] border border-gray-200 focus:border-orange-400 rounded -2xl px-4 py-3 outline-none text-sm text-gray-800 placeholder:text-gray-500 transition"
                   />
 
                   <textarea
                     rows={5}
                     placeholder="Tell us about your project..."
-                    className="w-full bg-[#fffaf2] border border-orange-100 focus:border-orange-400 rounded-2xl px-4 py-3 outline-none text-sm text-gray-800 placeholder:text-gray-500 transition resize-none"
+                    className="w-full bg-[#fffaf2] border border-gray-200 focus:border-orange-400 rounded -2xl px-4 py-3 outline-none text-sm text-gray-800 placeholder:text-gray-500 transition resize-none"
                   ></textarea>
 
                   <button
                     type="submit"
-                    className="group w-full inline-flex items-center justify-center gap-3 bg-gradient-to-r from-orange-500 via-orange-600 to-orange-500 hover:scale-[1.01] transition-all duration-300 text-white font-semibold px-6 py-3.5 rounded-2xl shadow-[0_15px_40px_rgba(249,115,22,0.3)] text-sm"
+                    className="group w-full inline-flex items-center justify-center gap-3 bg-gradient-to-r from-orange-500 via-orange-600 to-orange-500 hover:scale-[1.01] transition-all duration-300 text-white fontsemibold px-6 py-2 rounded -2xl shadow-[0_15px_40px_rgba(249,115,22,0.3)] text-sm"
                   >
                     Send Message
 

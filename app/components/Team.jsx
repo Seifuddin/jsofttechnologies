@@ -9,25 +9,31 @@ export default function TeamSection() {
       name: "Joseph Opere",
       role: "Founder & Network Engineer",
       desc: "Enterprise networking & infrastructure architecture specialist.",
-      img: "/images/edited-photo.png",
+      img: "/images/254759177042_status_5c62fda3e1c94f5699ec58ea2e78ea4f.jpg",
     },
     {
-      name: "Sarah Wanjiku",
+      name: "Brin Tanui",
       role: "CCTV Systems Lead",
       desc: "Security systems design, surveillance & monitoring solutions.",
-      img: "/images/IMG-20250804-WA0003~2.jpg",
+      img: "/images/IMG-20230803-WA0030.jpg",
     },
     {
-      name: "David Otieno",
+      name: "Swibe S. Paul",
       role: "IT Support Engineer",
       desc: "Fast-response IT support & system troubleshooting expert.",
-      img: "/images/edited-photo.png",
+      img: "/images/IMG-20230803-WA0025.jpg",
     },
     {
-      name: "Brian Mwangi",
+      name: "Brian Odhiambo",
       role: "Creative Media Designer",
       desc: "Branding, motion graphics & digital experience designer.",
-      img: "/images/IMG-20250804-WA0003~2.jpg",
+      img: "/images/IMG-20231203-WA0021.jpg",
+    },
+    {
+      name: "Muriithi Nguru",
+      role: "Web Developer & Software Engineer ",
+      desc: "World class Web development and Software Engineering Specialist",
+      img: "/images/Screenshot_20221028-140517.png",
     },
   ];
 
@@ -42,37 +48,37 @@ export default function TeamSection() {
         <div className="absolute bottom-[-120px] right-[-80px] w-[320px] h-[320px] bg-cyan-200/30 blur-3xl rounded-full"></div>
       </div>
 
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="mb-10"
+          className="mb-10 text-center"
         >
-          <div className="flex items-center gap-2 text-orange-600 text-xs font-semibold uppercase tracking-widest">
+          <div className="flex items-center justify-center gap-2 text-orange-600 text-xs font-semibold uppercase tracking-widest">
             <ShieldCheck className="w-4 h-4" />
             Meet The Team
           </div>
 
           <h2 className="text-2xl md:text-3xl font-black text-gray-900 mt-3 leading-tight">
             The Minds Behind
-            <span className="block text-orange-500">JSoft Technologies</span>
+            <span className="bock text-blue-900"> JSoft Technologies</span>
           </h2>
 
-          <p className="text-gray-600 mt-4 max-w-xl">
+          <p className="text-gray-700 mt-4 max-wxl">
             Engineers, designers, and security experts building reliable digital
             infrastructure and creative solutions.
           </p>
         </motion.div>
 
         {/* Layout */}
-        <div className="grid lg:grid-cols-3 gap-5">
+        <div className="grid md:grid-cols-3 gap-5">
           {/* Featured Member */}
           <motion.div
             whileHover={{ scale: 1.02 }}
-            className="lg:row-span-2 bg-white rounded-3xl border border-orange-100 shadow-lg relative overflow-hidden"
+            className="md:row-span-2 bg-white rounded -3xl border border-gray-200 shadowlg relative overflow-hidden"
           >
             {/* IMAGE */}
             <div className="h-72 w-full overflow-hidden">
@@ -83,8 +89,8 @@ export default function TeamSection() {
               />
             </div>
 
-            <div className="p-6 relative">
-              <h3 className="text-xl font-bold">{featured.name}</h3>
+            <div className="p-3 relative">
+              <h3 className="text-lg font-bold text-blue-950">{featured.name}</h3>
 
               <p className="text-orange-500 text-sm font-medium">
                 {featured.role}
@@ -107,10 +113,10 @@ export default function TeamSection() {
             <motion.div
               key={index}
               whileHover={{ y: -6 }}
-              className="bg-white rounded-2xl border border-orange-100 shadow-sm hover:shadow-md transition overflow-hidden"
+              className="bg-white rounded border border-gray-200 hover:shadow-md transition overflow-hidden"
             >
               {/* IMAGE */}
-              <div className="h-36 w-full overflow-hidden">
+              <div className="h-44 w-full overflow-hidden">
                 <img
                   src={member.img}
                   alt={member.name}
@@ -118,8 +124,8 @@ export default function TeamSection() {
                 />
               </div>
 
-              <div className="p-5">
-                <h3 className="font-bold text-gray-900">
+              <div className="p-3">
+                <h3 className="font-bold text-blue-950">
                   {member.name}
                 </h3>
 
@@ -127,11 +133,11 @@ export default function TeamSection() {
                   {member.role}
                 </p>
 
-                <p className="text-sm text-gray-600 mt-3">
+                <p className="text-sm text-gray-700 mt-3">
                   {member.desc}
                 </p>
 
-                <div className="flex gap-3 mt-4 text-gray-400">
+                <div className="hidden flex gap-3 mt-4 text-gray-400">
                   <Mail className="w-4 h-4 hover:text-orange-500 cursor-pointer" />
                   <Globe className="w-4 h-4 hover:text-orange-500 cursor-pointer" />
                 </div>

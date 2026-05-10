@@ -103,7 +103,7 @@ export default function Hero() {
           <div className="relative w-full h-[400px] md:h-[500px] rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
 
             <Image
-              src="/images/Frame 39910 copy-BRUg92SC.webp" // 🔥 replace with your image path
+              src="/images/Networking_171983987.jpg" // 🔥 replace with your image path
               alt="IT Infrastructure"
               fill
               className="object-cover"

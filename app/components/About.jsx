@@ -68,7 +68,7 @@ export default function AboutUs() {
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:65px_65px]"></div>
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative max-w-7xl mx-auto px-6 px-6 lg:px-8">
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 25 }}
@@ -84,7 +84,7 @@ export default function AboutUs() {
 
           <h2 className="text-3xl sm:text-3xl md:text-4xl font-black leading-tight">
             Your No. 1 Consultant
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-orange-400 to-orange-500">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-400 to-blue-400">
               in All I.T - Based Services
             </span>
           </h2>
@@ -106,7 +106,7 @@ export default function AboutUs() {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="relative rounded-[24px] overflow-hidden border border-white/10 shadow-[0_0_40px_rgba(249,115,22,0.12)]">
+            <div className="relative rounded -lg overflow-hidden border border-white/10 shadow-[0_0_40px_rgba(249,115,22,0.12)]">
               <Image
                 src="/images/aboutus.avif"
                 alt="JSoft Technologies"
@@ -126,10 +126,10 @@ export default function AboutUs() {
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
-                className="absolute bottom-4 left-4 right-4 bg-[#081120]/85 backdrop-blur-xl border border-orange-500/20 rounded-2xl p-4"
+                className="absolute bottom-4 left-4 right-4 bg-[#081120]/85 backdrop-blur-xl border border-orange-500/20 rounded -lg p-3"
               >
                 <div className="flex items-center gap-3 mb-3">
-                  <div className="w-11 h-11 rounded-xl bg-orange-500/10 flex items-center justify-center text-orange-400 border border-orange-500/20 shrink-0">
+                  <div className="w-9 h-9 rounded -lg bg-orange-500/10 flex items-center justify-center text-orange-400 border border-orange-500/20 shrink-0">
                     <Server className="w-5 h-5" />
                   </div>
 
@@ -163,7 +163,7 @@ export default function AboutUs() {
             {/* Intro */}
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-11 h-11 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400 shrink-0">
+                <div className="w-9 h-9 rounded bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400 shrink-0">
                   <MonitorSmartphone className="w-5 h-5" />
                 </div>
 
@@ -194,9 +194,9 @@ export default function AboutUs() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.06 }}
                   viewport={{ once: true }}
-                  className="group flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl px-3 py-3 hover:bg-orange-500/10 hover:border-orange-500/30 transition-all duration-300"
+                  className="group flex items-center gap-3 bg-white/5 border border-white/10 rounded -xl px-3 py-3 hover:bg-orange-500/10 hover:border-orange-500/30 transition-all duration-300"
                 >
-                  <div className="w-9 h-9 rounded-lg bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400 shrink-0">
+                  <div className="w-9 h-9 rounded -lg bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400 shrink-0">
                     <CheckCircle2 className="w-4 h-4" />
                   </div>
 

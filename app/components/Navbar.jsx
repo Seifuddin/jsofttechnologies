@@ -27,10 +27,10 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed w-full top-0 left-0 z-50 transition-all duration-300 ${
+      className={`fixed w-full mb-0 top-0 left-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-white shadow-lg backdropblur-md"
-          : "bg-white backdropblur-md"
+          ? "bg-white shadowlg backdropblurmd"
+          : "bg-white backdropblurmd"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
@@ -57,7 +57,7 @@ export default function Navbar() {
           {/* CTA BUTTON */}
           <Link
             href="#contact"
-            className="bg-amber-500 text-white px-6 py-2 rounded-lg font-semibold shadow-md hover:bg-amber-600 hover:shadow-lg transition"
+            className="bg-orange-500 text-white px-6 py-1 rounded-lg fontsemibold shadowmd hover:bg-amber-600 hover:shadow-lg transition"
           >
             Get a Quote
           </Link>
@@ -74,7 +74,7 @@ export default function Navbar() {
 
       {/* MOBILE MENU */}
       <div
-        className={`md:hidden bg-white shadow-lg overflow-hidden transition-all duration-300 ${
+        className={`md:hidden bg-white shadowlg overflow-hidden transition-all duration-300 ${
           open ? "max-h-96 py-5" : "max-h-0"
         }`}
       >
@@ -84,7 +84,7 @@ export default function Navbar() {
               key={index}
               href={link.href}
               onClick={() => setOpen(false)}
-              className="text-gray-700 hover:text-amber-500 transition font-medium"
+              className="text-gray-700 hover:text-orange-500 transition font-medium"
             >
               {link.name}
             </Link>
@@ -93,7 +93,7 @@ export default function Navbar() {
           <Link
             href="#contact"
             onClick={() => setOpen(false)}
-            className="bg-amber-500 text-white px-5 py-3 rounded-lg text-center font-semibold hover:bg-amber-600 transition"
+            className="bg-orange-500 text-white px-3 py-1 rounded-lg text-center fontsemibold hover:bg-orange-600 transition"
           >
             Get a Quote
           </Link>

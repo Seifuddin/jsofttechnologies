@@ -24,7 +24,7 @@ export default function TechnologyCTA() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="relative overflow-hidden rounded-[32px] border border-orange-500/20 bg-gradient-to-r from-orange-500/10 via-white/5 to-cyan-500/10 backdrop-blur-xl p-8 md:p-12"
+          className="relative overflow-hidden rounded -[32px] border border-orange-500/20 bg-gradient-to-r from-orange-500/10 via-white/5 to-cyan-500/10 backdrop-blur-xl p-8 md:p-12"
         >
           <div className="absolute top-0 right-0 w-60 h-60 bg-orange-500/20 blur-3xl rounded-full"></div>
 
@@ -37,7 +37,7 @@ export default function TechnologyCTA() {
 
               <h3 className="text-3xl md:text-5xl font-black leading-tight mb-6 text-white">
                 Delivering Secure, Smart &
-                <span className="text-orange-400">
+                <span className="text-blue-400">
                   {" "}
                   Future-Ready Solutions
                 </span>
@@ -52,7 +52,7 @@ export default function TechnologyCTA() {
 
             {/* Right */}
             <div className="grid grid-cols-2 gap-4">
-              <div className="bg-white/5 border border-white/10 rounded-2xl p-5">
+              <div className="bg-white/5 border border-white/10 rounded -2xl p-5">
                 <Camera className="w-9 h-9 text-orange-400 mb-4" />
 
                 <h4 className="font-bold text-lg mb-2 text-white">
