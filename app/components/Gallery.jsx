@@ -11,19 +11,19 @@ import "swiper/css";
 export default function PhotographyLuxurySwiper() {
   const images = [
     {
-      src: "/images/photo1.jpg",
+      src: "/images/254759177042_status_5c62fda3e1c94f5699ec58ea2e78ea4f.jpg",
       title: "Brand Identity Portrait",
     },
     {
-      src: "/images/photo2.jpg",
+      src: "/images/IMG-20231202-WA0019.jpg",
       title: "Executive Photography",
     },
     {
-      src: "/images/photo3.jpg",
+      src: "/images/IMG-20231204-WA0011.jpg",
       title: "Lifestyle Capture",
     },
     {
-      src: "/images/photo4.jpg",
+      src: "/images/IMG-20231202-WA0016.jpg",
       title: "Creative Direction",
     },
   ];
@@ -39,11 +39,11 @@ export default function PhotographyLuxurySwiper() {
           whileInView={{ opacity: 1, y: 0 }}
           className="text-center mb-8"
         >
-          <p className="text-[10px] tracking-[0.3em] text-gray-500 uppercase">
+          <p className="text-[10px] tracking-[0.3em] text-orange-500 uppercase">
             Premium Photography Studio
           </p>
 
-          <h2 className="text-2xl md:text-4xl font-semibold mt-2">
+          <h2 className="text-2xl md:text-3xl font-semibold mt-2">
             Visuals That Elevate Your Brand
           </h2>
 
@@ -72,7 +72,7 @@ export default function PhotographyLuxurySwiper() {
               <SwiperSlide key={i}>
                 <motion.div
                   whileHover={{ scale: 1.02 }}
-                  className="relative h-[220px] md:h-[240px] rounded-xl overflow-hidden shadow-sm border border-gray-100"
+                  className="relative h-[220px] md:h-[240px] rounded -xl overflow-hidden shadow-sm border border-gray-100"
                 >
 
                   {/* IMAGE */}

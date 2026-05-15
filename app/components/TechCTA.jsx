@@ -24,7 +24,7 @@ export default function TechnologyCTA() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="relative overflow-hidden rounded -[32px] border border-orange-500/20 bg-gradient-to-r from-orange-500/10 via-white/5 to-cyan-500/10 backdrop-blur-xl p-8 md:p-12"
+          className="relative overflow-hidden rounded -[32px] border border-orange-500/20 bg-gradient-to-r from-orange-500/10 via-white/5 to-cyan-500/10 backdrop-blur-xl p-4 md:p-12"
         >
           <div className="absolute top-0 right-0 w-60 h-60 bg-orange-500/20 blur-3xl rounded-full"></div>
 
