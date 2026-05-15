@@ -12,8 +12,7 @@ export default function Navbar() {
     { name: "Home", href: "/" },
     { name: "Services", href: "/services" },
     { name: "About", href: "/about" },
-    { name: "Portfolio", href: "/portfolio" },
-    { name: "Contact", href: "/contacts" },
+    { name: "Contact Us", href: "/contacts" },
   ];
 
   useEffect(() => {
