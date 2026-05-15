@@ -31,120 +31,113 @@ export default function TeamSection() {
     },
     {
       name: "Muriithi Nguru",
-      role: "Web Developer & Software Engineer ",
-      desc: "World class Web development and Software Engineering Specialist",
+      role: "Web Developer & Software Engineer",
+      desc: "World-class web development and software engineering specialist.",
       img: "/images/1765669389666~2.jpg",
     },
   ];
 
-  const featured = team[0];
+  const leader = team[0];
   const others = team.slice(1);
 
   return (
-    <section className="relative bg-amber-50 py-14 overflow-hidden">
-      {/* Background atmosphere */}
+    <section className="relative bg-amber-50 py-16 overflow-hidden">
+      {/* background glow */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-[-120px] left-[-80px] w-[300px] h-[300px] bg-orange-200/40 blur-3xl rounded-full"></div>
-        <div className="absolute bottom-[-120px] right-[-80px] w-[320px] h-[320px] bg-cyan-200/30 blur-3xl rounded-full"></div>
+        <div className="absolute top-[-100px] left-[-60px] w-[220px] h-[220px] bg-orange-200/40 blur-3xl rounded-full" />
+        <div className="absolute bottom-[-100px] right-[-60px] w-[240px] h-[240px] bg-cyan-200/30 blur-3xl rounded-full" />
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
+      <div className="relative max-w-7xl mx-auto px-6">
+
+        {/* HEADER */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="mb-10 text-center"
+          className="text-center mb-8"
         >
-          <div className="flex items-center justify-center gap-2 text-orange-600 text-xs fontsemibold uppercase tracking-widest">
+          <div className="flex items-center justify-center gap-2 text-orange-600 text-[11px] font-semibold uppercase tracking-widest">
             <ShieldCheck className="w-4 h-4" />
             Meet The Team
           </div>
 
-          <h2 className="text-2xl md:text-3xl font-black text-gray-900 mt-3 leading-tight">
-            The Minds Behind
-            <span className="bock text-blue-900"> JSoft Technologies KE</span>
+          <h2 className="text-2xl md:text-3xl font-black text-gray-900 mt-2">
+            The Minds Behind{" "}
+            <span className="text-blue-900">JSoft Technologies</span>
           </h2>
 
-          <p className="text-gray-700 mt-4 max-wxl">
-            Engineers, designers, and security experts building reliable digital
-            infrastructure and creative solutions.
+          <p className="text-gray-700 mt-2 text-xs max-w-xl mx-auto">
+            Engineers, designers, and IT experts building reliable digital systems.
           </p>
         </motion.div>
 
-        {/* Layout */}
-        <div className="grid md:grid-cols-3 gap-5">
-          {/* Featured Member */}
-          <motion.div
-            whileHover={{ scale: 1.02 }}
-            className="md:row-span-2 bg-white rounded -3xl border border-gray-200 shadowlg relative overflow-hidden"
-          >
-            {/* IMAGE */}
-            <div className="h-72 w-full overflow-hidden">
-              <img
-                src={featured.img}
-                alt={featured.name}
-                className="w-full h-full object-cover hover:scale-105 transition duration-300"
-              />
+        {/* LEADER (SMALLER) */}
+        <motion.div
+          whileHover={{ scale: 1.01 }}
+          className="bg-white rounded -2xl border border-orange-100 shadowsm overflow-hidden flex mb-8"
+        >
+          <div className="w-1/2 h-52">
+            <img
+              src={leader.img}
+              alt={leader.name}
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          <div className="p-4 w-1/2 flex flex-col justify-center">
+            <h3 className="text-lg font-bold text-blue-950">
+              {leader.name}
+            </h3>
+
+            <p className="text-orange-500 text-xs font-medium">
+              {leader.role}
+            </p>
+
+            <p className="text-gray-600 text-xs mt-2 line-clamp-3">
+              {leader.desc}
+            </p>
+
+            <div className="flex gap-3 mt-4 text-gray-500">
+              <Mail className="w-4 h-4 hover:text-orange-500 cursor-pointer" />
+              <Globe className="w-4 h-4 hover:text-orange-500 cursor-pointer" />
             </div>
+          </div>
+        </motion.div>
 
-            <div className="p-3 relative">
-              <h3 className="text-lg font-bold text-blue-950">{featured.name}</h3>
-
-              <p className="text-orange-500 text-sm font-medium">
-                {featured.role}
-              </p>
-
-              <p className="text-gray-600 text-sm mt-4 leading-relaxed">
-                Enterprise networking & infrastructure architecture specialist
-                leading JSoft Technologies KE with modern scalable systems.
-              </p>
-
-              <div className="flex gap-3 mt-6 text-gray-500">
-                <Mail className="w-4 h-4 hover:text-orange-500 cursor-pointer" />
-                <Globe className="w-4 h-4 hover:text-orange-500 cursor-pointer" />
-              </div>
-            </div>
-          </motion.div>
-
-          {/* Side Members */}
+        {/* TEAM GRID (SMALLER CARDS) */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {others.map((member, index) => (
             <motion.div
               key={index}
-              whileHover={{ y: -6 }}
-              className="bg-white rounded border border-gray-200 hover:shadow-md transition overflow-hidden"
+              whileHover={{ y: -4 }}
+              className="bg-white rounded -xl border border-orange-100 overflow-hidden shadowsm"
             >
-              {/* IMAGE */}
-              <div className="h-44 w-full overflow-hidden">
+              <div className="h-32 w-full">
                 <img
                   src={member.img}
                   alt={member.name}
-                  className="w-full h-full object-cover hover:scale-105 transition duration-300"
+                  className="w-full h-full object-cover"
                 />
               </div>
 
               <div className="p-3">
-                <h3 className="font-bold text-blue-950">
+                <h3 className="font-bold text-blue-950 text-sm">
                   {member.name}
                 </h3>
 
-                <p className="text-xs text-orange-500 font-medium mt-1">
+                <p className="text-[11px] text-orange-500 font-medium mt-1">
                   {member.role}
                 </p>
 
-                <p className="text-sm text-gray-700 mt-3">
+                <p className="text-[11px] text-gray-600 mt-2 line-clamp-2">
                   {member.desc}
                 </p>
-
-                <div className="hidden flex gap-3 mt-4 text-gray-400">
-                  <Mail className="w-4 h-4 hover:text-orange-500 cursor-pointer" />
-                  <Globe className="w-4 h-4 hover:text-orange-500 cursor-pointer" />
-                </div>
               </div>
             </motion.div>
           ))}
         </div>
+
       </div>
     </section>
   );
