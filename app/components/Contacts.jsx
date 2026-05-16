@@ -289,7 +289,7 @@ export default function ContactPage() {
 
                   <button
                     type="submit"
-                    className="group w-full inline-flex items-center justify-center gap-3 bg-gradient-to-r from-orange-500 via-orange-600 to-orange-500 hover:scale-[1.01] transition-all duration-300 text-white fontsemibold px-6 py-2 rounded -2xl shadow-[0_15px_40px_rgba(249,115,22,0.3)] text-sm"
+                    className="group w-full inline-flex items-center justify-center gap-3 bg-gradient-to-r from-orange-500 via-orange-600 to-orange-500 hover:scale-[1.01] transition-all duration-300 text-white fontsemibold px-6 py-2 rounded -2xl shadow[0_15px_40px_rgba(249,115,22,0.3)] text-sm"
                   >
                     Send Message
 

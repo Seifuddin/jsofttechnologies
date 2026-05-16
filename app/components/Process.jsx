@@ -21,7 +21,7 @@ export default function NetworkGlobeProcess() {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-[#050814] py-24 text-white">
+    <section className="relative overflow-hidden bg-[#050814] py-14 text-white">
       {/* SPACE BACKGROUND */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.15),transparent_60%)]" />
@@ -35,14 +35,14 @@ export default function NetworkGlobeProcess() {
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
         {/* HEADER */}
-        <div className="mb-16 text-center">
+        <div className="mb-10 text-center">
           <p className="text-xs tracking-[0.3em] text-orange-300">
             GLOBAL DELIVERY NETWORK
           </p>
 
           <h2 className="mt-3 text-2xl md:text-3xl font-black sm:text-3xl">
             3D{" "}
-            <span className="bg-gradient-to-r from-blue-400 to-orange-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-400 to-blue-400 bg-clip-text text-transparent">
               Network Execution Globe
             </span>
           </h2>
@@ -64,10 +64,10 @@ export default function NetworkGlobeProcess() {
                 <motion.div
                   key={i}
                   whileHover={{ scale: 1.05 }}
-                  className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 px-5 py-4 backdrop-blur-xl"
+                  className="flex items-center gap-4 rounded -2xl border border-white/10 bg-white/5 px-3 py-2 backdrop-blur-xl"
                 >
-                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-500/20">
-                    <Icon className="h-5 w-5 text-blue-400" />
+                  <div className="flex h-8 w-8 items-center justify-center rounded -xl bg-blue-500/20">
+                    <Icon className="h-4 w-4 text-blue-400" />
                   </div>
 
                   <span className="text-sm font-semibold">
@@ -79,7 +79,7 @@ export default function NetworkGlobeProcess() {
           </div>
 
           {/* GLOBE CORE */}
-          <div className="relative flex h-[420px] w-[420px] items-center justify-center">
+          <div className="relative flex h-[380px] w-[380px] items-center justify-center">
             {/* Outer rotating ring */}
             <motion.div
               animate={{ rotate: 360 }}
@@ -91,14 +91,14 @@ export default function NetworkGlobeProcess() {
             <motion.div
               animate={{ rotate: -360 }}
               transition={{ repeat: Infinity, duration: 35, ease: "linear" }}
-              className="absolute h-[340px] w-[340px] rounded-full border border-orange-500/20"
+              className="absolute h-[290px] w-[290px] rounded-full border border-orange-500/20"
             />
 
             {/* Globe */}
             <motion.div
               animate={{ rotate: 360 }}
               transition={{ repeat: Infinity, duration: 60, ease: "linear" }}
-              className="relative h-[260px] w-[260px] rounded-full bg-gradient-to-br from-blue-500/20 via-white/5 to-orange-500/20 shadow-2xl"
+              className="relative h-[210px] w-[210px] rounded-full bg-gradient-to-br from-blue-500/20 via-white/5 to-orange-500/20 shadow-2xl"
             >
               {/* Grid lines */}
               <div className="absolute inset-0 rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.08)_1px,transparent_1px)] bg-[size:20px_20px]" />
@@ -145,10 +145,10 @@ export default function NetworkGlobeProcess() {
                 <motion.div
                   key={i}
                   whileHover={{ scale: 1.05 }}
-                  className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 px-5 py-4 backdrop-blur-xl"
+                  className="flex items-center gap-4 rounded -2xl border border-white/10 bg-white/5 px-3 py-2 backdrop-blur-xl"
                 >
-                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-orange-500/20">
-                    <Icon className="h-5 w-5 text-orange-400" />
+                  <div className="flex h-8 w-8 items-center justify-center rounded -xl bg-orange-500/20">
+                    <Icon className="h-4 w-4 text-orange-400" />
                   </div>
 
                   <span className="text-sm font-semibold">
@@ -161,7 +161,7 @@ export default function NetworkGlobeProcess() {
         </div>
 
         {/* FOOT NOTE */}
-        <div className="mt-16 text-center text-sm text-gray-500">
+        <div className="mt-10 text-center text-sm text-gray-500">
           A simulated global network architecture representing how JSoft
           Technologies KE delivers services across systems and environments.
         </div>

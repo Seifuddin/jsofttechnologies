@@ -77,15 +77,15 @@ export default function AboutUs() {
           viewport={{ once: true }}
           className="text-center max-w-3xl mx-auto mb-10"
         >
-          <div className="inline-flex items-center gap-2 bg-white/10 border border-orange-500/20 px-4 py-2 rounded-full text-orange-400 text-xs font-medium mb-4 backdrop-blur-md">
+          <div className="hidden inlineflex items-center gap-2 bg-white/10 border border-orange-500/20 px-4 py-1 rounded-full text-orange-400 text-xs fontmedium mb-4 backdrop-blur-md">
             <Sparkles className="w-3.5 h-3.5" />
             WHAT WE DO
           </div>
 
-          <h2 className="text-3xl sm:text-3xl md:text-4xl font-black leading-tight">
-            Your No. 1 Consultant
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-400 to-blue-400">
-              in All I.T - Based Services
+          <h2 className="text-2xl sm:text-3xl md:text-3xl font-black leading-tight">
+            Your No. 1 Consultant 
+            <span className="ml-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-400 to-blue-400"> 
+               in All I.T - Based Services
             </span>
           </h2>
 

@@ -36,7 +36,7 @@ export default function AboutHero() {
           </div>
 
           {/* Heading */}
-          <h1 className="max-w-3xl text-2xl font-black leading-tight sm:text-3xl lg:text-4xl">
+          <h1 className="max-w-3xl text-2xl font-black leading-tight sm:text-3xl lg:text-3xl">
             Powering Businesses With{" "}
             <span className="bg-gradient-to-r from-blue-400 to-blue-500 bg-clip-text text-transparent">
               Smart Technology
@@ -52,7 +52,7 @@ export default function AboutHero() {
           </p>
 
           {/* Buttons */}
-          <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+          <div className="mt-7 flex flexcol gap-3 sm: flex-row">
             <button className="group flex items-center justify-center gap-2 rounded -xl bg-gradient-to-r from-orange-500 to-orange-600 px-4 py-1 fontsemibold text-white shadow-lgshadow-orange-500/30 transition-all duration-300 hover:scale-105 hover:shadow-orange-500/50">
               Explore Services
               <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
@@ -64,7 +64,7 @@ export default function AboutHero() {
           </div>
 
           {/* Feature Mini Cards */}
-          <div className="mt-9 grid grid-cols-2 gap-3 sm:grid-cols-4">
+          <div className="hidden mt-6 md:grid grid-cols-2 gap-3 sm:grid-cols-4">
             {[
               {
                 icon: <Network className="h-5 w-5 text-blue-400" />,
@@ -86,9 +86,9 @@ export default function AboutHero() {
               <motion.div
                 key={index}
                 whileHover={{ y: -4 }}
-                className="rounded-2xl border border-white/10 bg-white/5 p-3 backdrop-blur-md"
+                className="rounded -2xl border border-white/10 bg-white/5 p-2 backdrop-blur-md"
               >
-                <div className="mb-2 flex h-10 w-10 items-center justify-center rounded-xl bg-[#101c2e]">
+                <div className="mb-1 flex h-7 w-7 items-center justify-center rounded -xl bg-[#101c2e]">
                   {item.icon}
                 </div>
 
@@ -125,7 +125,7 @@ export default function AboutHero() {
                 repeat: Infinity,
                 duration: 4,
               }}
-              className="absolute left-5 top-5 rounded-2xl border border-white/10 bg-[#0d1728]/90 p-3 backdrop-blur-lg"
+              className="absolute left-5 top-5 rounded -2xl border border-white/10 bg-[#0d1728]/90 p-2 backdrop-blur-lg"
             >
               <p className="text-xs text-gray-300">Projects Completed</p>
               <h3 className="mt-1 text-2xl font-bold text-orange-400">
@@ -139,7 +139,7 @@ export default function AboutHero() {
                 repeat: Infinity,
                 duration: 5,
               }}
-              className="absolute bottom-5 right-5 rounded-2xl border border-white/10 bg-[#0d1728]/90 p-3 backdrop-blur-lg"
+              className="absolute bottom-5 right-5 rounded -2xl border border-white/10 bg-[#0d1728]/90 p-2 backdrop-blur-lg"
             >
               <p className="text-xs text-gray-300">Client Satisfaction</p>
               <h3 className="mt-1 text-2xl font-bold text-blue-400">

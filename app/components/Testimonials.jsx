@@ -27,10 +27,10 @@ export default function TrustSection() {
   ];
 
   const logos = [
-    { name: "KCB Bank", icon: "🏦" },
-    { name: "Equity Bank", icon: "🏛️" },
-    { name: "Safaricom", icon: "📡" },
-    { name: "Naivas", icon: "🛒" },
+    { name: "Banks", icon: "🏦" },
+    { name: "Financial Institutions", icon: "🏛️" },
+    { name: "Telecommunication", icon: "📡" },
+    { name: "Businesses", icon: "🛒" },
     { name: "Schools", icon: "🎓" },
     { name: "SMEs", icon: "💼" },
   ];
@@ -53,12 +53,13 @@ export default function TrustSection() {
 
         {/* HEADER */}
         <div className="mb-10 text-center">
-          <p className="text-xs font-semibold text-orange-600">
+          <p className="text-xs fontsemibold text-orange-600">
             TRUST NETWORK
           </p>
 
           <h2 className="mt-2 text-2xl font-black md:text-3xl">
-            Clients Who Trust Us
+            Clients Who 
+            <span className="text-blue-900"> Trust Us</span>
           </h2>
 
           <p className="mt-2 text-sm text-gray-700">
@@ -67,18 +68,18 @@ export default function TrustSection() {
         </div>
 
         {/* FEATURED TESTIMONIAL */}
-        <div className="relative mb-12 rounded -3xl border border-orange-100 bg-white p-6 shadow-sm">
+        <div className="relative mb-10 rounded -3xl border border-orange-100 bg-white p-6 shadowsm">
 
           <div className="flex gap-4">
             {/* avatar */}
             <img
               src={active.image}
               alt={active.name}
-              className="h-12 w-12 rounded-full object-cover border border-orange-200"
+              className="h-16 w-16 rounded-full object-cover border border-orange-200"
             />
 
             <div className="flex-1">
-              <Quote className="h-5 w-5 text-blue-500" />
+              <Quote className="h-5 w-5 text-orange-400" />
 
               <motion.div
                 key={index}
@@ -92,7 +93,7 @@ export default function TrustSection() {
 
                 <div className="mt-4 flex items-center justify-between border-t border-gray-100 pt-3">
                   <div>
-                    <p className="text-sm font-bold">{active.name}</p>
+                    <p className="text-sm font-bold text-blue-950">{active.name}</p>
                     <p className="text-xs text-orange-600">{active.role}</p>
                   </div>
 
@@ -123,10 +124,10 @@ export default function TrustSection() {
             <motion.div
               key={i}
               whileHover={{ scale: 1.05 }}
-              className="flex flex-col items-center justify-center rounded -xl border border-gray-200 bg-white p-3 shadow-sm"
+              className="flex flex-col items-center justify-center rounded -xl border border-gray-200 bg-white p-1 shadowsm"
             >
-              <div className="text-xl">{logo.icon}</div>
-              <p className="mt-1 text-xs font-semibold text-gray-700">
+              <div className="text-xl text-orange-400">{logo.icon}</div>
+              <p className="mt-1 text-xs font-semibold text-blue-950">
                 {logo.name}
               </p>
             </motion.div>

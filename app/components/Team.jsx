@@ -57,7 +57,7 @@ export default function TeamSection() {
           viewport={{ once: true }}
           className="text-center mb-8"
         >
-          <div className="flex items-center justify-center gap-2 text-orange-600 text-[11px] font-semibold uppercase tracking-widest">
+          <div className="flex items-center justify-center gap-2 text-orange-600 text-[11px] fontsemibold uppercase tracking-widest">
             <ShieldCheck className="w-4 h-4" />
             Meet The Team
           </div>
@@ -113,7 +113,7 @@ export default function TeamSection() {
               whileHover={{ y: -4 }}
               className="bg-white rounded -xl border border-orange-100 overflow-hidden shadowsm"
             >
-              <div className="h-32 w-full">
+              <div className="h-44 w-full">
                 <img
                   src={member.img}
                   alt={member.name}

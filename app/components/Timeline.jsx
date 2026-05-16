@@ -78,10 +78,10 @@ export default function CompanyStory() {
                 }`}
               >
                 {/* ICON BLOCK (SMALLER) */}
-                <div className="relative flex h-24 w-24 items-center justify-center rounded -2xl bg-white shadowmd border border-gray-200">
+                <div className="relative flex h-10 w-10 md:h-16 md:w-16 items-center justify-center rounded -2xl bg-white shadowmd border border-gray-200">
                   <div className="absolute inset-0 rounded -2xl bg-gradient-to-br from-blue-100 to-orange-100 opacity-40" />
 
-                  <Icon className="relative z-10 h-8 w-8 text-blue-600" />
+                  <Icon className="relative z-10 h-5 w-5 text-orange-400" />
                 </div>
 
                 {/* TEXT CARD (SMALLER PADDING) */}
@@ -90,7 +90,7 @@ export default function CompanyStory() {
                     {item.year}
                   </p>
 
-                  <h3 className="mt-1 textxl font-black">
+                  <h3 className="mt-1 textxl font-black text-blue-950">
                     {item.title}
                   </h3>
 
